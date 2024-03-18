@@ -96,14 +96,16 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+
       <section className="home-sec-2 home-sec container">
         <div className="sec-title" data-aos="fade-up">
           <span data-aos="fade-up">What we do</span>
         </div>
         <div className="sec-header" data-aos="fade-up">
-          <h1 data-aos="fade-up">
-            Effortlessly meet your pet's needs with our user-friendly app.
-          </h1>
+          <h3 data-aos="fade-up">
+            Effortlessly meet your pet's needs with<br/> our user-friendly app.
+          </h3>
         </div>
         <div className="sec-containers">
           <div className="sec-container" data-aos="fade-up">
@@ -111,19 +113,20 @@ export default function LandingPage() {
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
             <div className="sec-container-header" data-aos="fade-up">
-              <h4>Experience data management
-                and track progress</h4>
+              <h5>Experience data management
+                and  track progress</h5>
+                <p className='sec-container-desc'>Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.</p>
             </div>
-            <div className="sec-container-desc" data-aos="fade-up">
+            {/* <div className="sec-container-desc" data-aos="fade-up">
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
-            </div>
+            </div> */}
           </div>
-          <div className="sec-container" data-aos="fade-up">
+          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
             <div className="sec-container-header" data-aos="fade-up">
-              <h4>Set Reminders and updates</h4>
+              <h5>Set Reminders and updates</h5>
             </div>
             <div className="sec-container-desc" data-aos="fade-up">
               Access reminders and updates via our complimentary data management services for seamless progress tracking.
@@ -214,7 +217,7 @@ export default function LandingPage() {
             <div className='sec-6-mobile-image'>
             <img src={mobileImg} alt="" data-aos="fade-up"  />
             </div>
-            <p data-aos="fade-up">"Discover a world of convenience and joy with our PetEye app! Seamlessly manage your pet's needs, connect with fellow pet lovers, and explore exclusive features tailored for you and your furry companion. Elevate your pet parenting journey – download now from the App Store or Play Store!"</p>
+            <p className='home-sec-6-para' data-aos="fade-up">"Discover a world of convenience and joy with our PetEye app! Seamlessly manage your pet's needs, connect with fellow pet lovers, and explore exclusive features tailored for you and your furry companion. Elevate your pet parenting journey – download now from the App Store or Play Store!"</p>
             <div className="btns">
               <img data-aos="fade-up" src={playStoreBadge} alt="" />
               <img data-aos="fade-up" src={appStoreBadge} alt="" />
