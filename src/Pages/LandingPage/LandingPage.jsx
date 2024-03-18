@@ -12,12 +12,12 @@ mainImg3="https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Fr
 mainImg4="https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
 mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
 sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
-wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896560/Landing%20page/desktop/card-wheel.40fb5ccfba0652cae0a7_i2opsv.png",
+wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
 sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
 mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896905/Landing%20page/desktop/iphone-12-pro--silver.8e03b609b6a588e53d8c_qeifvh.png",
 playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
 appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
-landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1709897060/Landing%20page/desktop/landing-footer.a812d479f5384de3d557_drhxyf.jpg"
+landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png"
 
 const defaultVid="https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
 
@@ -226,7 +226,6 @@ export default function LandingPage() {
         <img src={landingFooter} alt="" />
       </section>
       <VideoModal videoSrc={videoToPlay} setVideoSrc={setVideoToPlay}></VideoModal>
-
     </div>
   )
 }
