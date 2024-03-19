@@ -4,22 +4,25 @@ import './LandingPage.css'
 import ImageCard from './components/ImageCard'
 import VideoModal from './components/VideoModal'
 import AOS from 'aos';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
 
-const petEyeImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
-mainImg1="https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
-mainImg2="https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
-mainImg3="https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
-mainImg4="https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
-mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
-sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
-wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
-sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
-mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896905/Landing%20page/desktop/iphone-12-pro--silver.8e03b609b6a588e53d8c_qeifvh.png",
-playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
-appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
-landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png"
 
-const defaultVid="https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
+const petEyeImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
+  mainImg1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
+  mainImg2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
+  mainImg3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
+  mainImg4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
+  mainImg5 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
+  sec2Img1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
+  wheelImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710829864/shadow_card_carousel_gpsdzx.png",
+  sec5Img = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
+  mobileImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
+  playStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
+  appStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
+  landingFooter = "https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png"
+
+const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
 
 export default function LandingPage() {
   const [videoToPlay, setVideoToPlay] = useState(null);
@@ -65,16 +68,42 @@ export default function LandingPage() {
   console.log(imageRotation)
 
 
-    
+
+  const [rotationIndex, setRotationIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setRotationIndex(prevIndex => (prevIndex + 1) % 21); // Assuming 21 items
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const step = 360 / 21; // Assuming 21 items
+
+  const imageUrls = [
+    'https://picsum.photos/600?1',
+    'https://picsum.photos/600?2',
+    'https://picsum.photos/600?3',
+    // Add URLs for all 21 items here
+    // Ensure the array length matches the number of items
+  ];
+  
+
+
+
+
+
+
 
   return (
     <div className="main landing scroll-snap">
       <Header></Header>
       <section className="home-main-sec home-sec">
         <div className="home-head-tag" data-aos="fade-up">
-        <div className="home-head">
-          <img src={petEyeImg} alt="" data-aos="fade-up" data-aos-delay="200" />
-        </div>
+          <div className="home-head">
+            <img src={petEyeImg} alt="" data-aos="fade-up" data-aos-delay="200" />
+          </div>
           <span>Nurturing Bonds Ensuring Safety</span>
           <button className='primary-btn'>Explore</button>
         </div>
@@ -104,7 +133,7 @@ export default function LandingPage() {
         </div>
         <div className="sec-header" data-aos="fade-up">
           <h3 data-aos="fade-up">
-            Effortlessly meet your pet's needs with<br/> our user-friendly app.
+            Effortlessly meet your pet's needs with<br /> our user-friendly app.
           </h3>
         </div>
         <div className="sec-containers">
@@ -115,13 +144,13 @@ export default function LandingPage() {
             <div className="sec-container-header" data-aos="fade-up">
               <h5>Experience data management
                 and  track progress</h5>
-                <p className='sec-container-desc'>Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.</p>
+              <p className='sec-container-desc'>Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.</p>
             </div>
             {/* <div className="sec-container-desc" data-aos="fade-up">
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
+          <div className="sec-container" style={{ marginTop: '-55px' }} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
@@ -215,7 +244,7 @@ export default function LandingPage() {
           <div className="home-sec-6-content">
             <h1 data-aos="fade-up">Enhance Your Experience Download Our App from the App Store or Play Store </h1>
             <div className='sec-6-mobile-image'>
-            <img src={mobileImg} alt="" data-aos="fade-up"  />
+              <img src={mobileImg} alt="" data-aos="fade-up" />
             </div>
             <p className='home-sec-6-para' data-aos="fade-up">"Discover a world of convenience and joy with our PetEye app! Seamlessly manage your pet's needs, connect with fellow pet lovers, and explore exclusive features tailored for you and your furry companion. Elevate your pet parenting journey – download now from the App Store or Play Store!"</p>
             <div className="btns">
@@ -229,7 +258,22 @@ export default function LandingPage() {
         <img src={landingFooter} alt="" />
       </section>
       <VideoModal videoSrc={videoToPlay} setVideoSrc={setVideoToPlay}></VideoModal>
+
+      <section>
+
+
+       <div className="circleCarousel">
+      <div className="circle" style={{'--items': 21, '--rotation': `${(step * rotationIndex) * -1}deg`}}>
+      {[...Array(21)].map((_, index) => (
+          <div key={index} className="image" style={{'--index': index, 'backgroundImage': `url(${imageUrls[index % imageUrls.length]})`}}></div>
+        ))}
+      </div>
+    </div>
+      </section>
+
+
     </div>
   )
+
 }
 

@@ -1,18 +1,61 @@
 
-/* .home-main-sec,
-.home-sec-3,
-.home-sec-5,
-.home-sec-6,
-.home-sec-7 {
-    min-height: 100vh;
+.circleCarousel {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @media (max-width:600px) {
+    .circleCarousel {
+        height: 50vh;
+      }
+  }
+  
+  .circle {
+    --size: 195vw;
+    --img-width: 20.555vw;
+    --img-height: 25.6944vw;
+    --radius: calc((var(--size) - var(--img-height)) / 2);
+    --rotation: 0deg;
+    width: var(--size);
+    min-width: 600px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 25%;
+    left: calc(50% - var(--size) / 2);
+    rotate: calc(-90deg + var(--rotation));
+    transition: rotate 2s cubic-bezier(.55,0,.1,1);
+  }
+  
+  .image {
+    --index: 0;
+    --step: calc(360deg / var(--items));
+    --offset: 250px;
+    --angle: calc(var(--step) * var(--index));
+    --difference: calc((var(--img-height) - var(--img-width)) / 2);
+    --x: calc( var(--difference) + var(--radius) + var(--radius) * cos(var(--angle)));
+    --y: calc( var(--radius) + var(--radius) * sin(var(--angle)));
+    
+    background: #ccc;
+    width: var(--img-width);
+    height: var(--img-height);
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    background-size: cover;
+    background-position: center center;
+    transform-origin: center center;
+    rotate: calc(var(--angle) + 90deg);
+  }
+
+
+
+
+
+
+.main{
+    background-color: #FFF;
 }
-
-.home-sec-2,
-.home-sec-4
-{
-min-height: 100vh;
-} */
-
 
 
 
@@ -460,7 +503,7 @@ min-height: 100vh;
 }
 
 .sec-6-img-container img {
-    height: 60vh;
+    height: 80vh;
 }
 
 .sec-6-img-container {
@@ -472,7 +515,7 @@ min-height: 100vh;
 .home-sec-6-content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
 }
 
@@ -941,7 +984,6 @@ min-height: 100vh;
     .home-main-sec,
 .home-sec-3,
 .home-sec-6,
-.home-sec-7,
 .home-sec-2
 {
     min-height: 100vh;
