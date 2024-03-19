@@ -29,11 +29,11 @@ min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .home-head img {
-    width: 800px;
+    width: 500px;
     max-width: 90vw;
 }
 
@@ -63,9 +63,11 @@ min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     align-items: flex-end;
     margin-top: -50px;
+    padding-left: 80px;
+    padding-right: 80px;    
 }
 
 .home-head-tag button {
@@ -109,7 +111,7 @@ min-height: 100vh;
 .home-sec-2 {
     gap: 10px;
     padding: 100px;
-    padding-top: 0px !important;
+    padding-top: 30px !important;
     display: flex;
     justify-content: center;
  
@@ -130,7 +132,7 @@ min-height: 100vh;
 
 .home-sec-2 .sec-containers {
     display: flex;
-    gap: 200px;
+    gap: 300px;
 }
 
 .home-sec-2 .sec-container-header h5 {
@@ -151,7 +153,7 @@ min-height: 100vh;
 
 .home-sec-2 .sec-containers .sec-container-1-img {
     width: 300px;
-    height: 300px;
+    height: 250px;
     border-radius: 50px;
     overflow: hidden;
 }
