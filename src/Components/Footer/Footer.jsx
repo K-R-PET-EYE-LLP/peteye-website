@@ -215,8 +215,7 @@ const LinkSection = () => {
 
         <p className='mflasttext'>&copy;2023 K R PET EYE LLP. All Right Reserved.</p>
       </section>
-
-
+  
 
 
 
