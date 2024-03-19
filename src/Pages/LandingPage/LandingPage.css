@@ -451,18 +451,19 @@ min-height: 100vh;
 
 .home-sec-6 {
     padding: 60px 0px;
+    padding-left: 70px;
 }
 
 .home-sec-6-container {
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 .home-sec-6-para{
     font-size: large !important;
 }
 
 .sec-6-img-container img {
-    height: 60vh;
+    height: 65vh;
 }
 
 .sec-6-img-container {
@@ -474,19 +475,23 @@ min-height: 100vh;
 .home-sec-6-content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
+   
 }
 
 .home-sec-6-content h1 {
     font-size: 45px;
     font-family: Prata;
+    max-width: 90%;
 }
 
 .home-sec-6-content p {
     font-size: 30px;
     color: #464646;
     font-weight: 350;
+    max-width: 90%;
+
 }
 
 .home-sec-6-content .btns {
@@ -942,8 +947,8 @@ min-height: 100vh;
 
     .home-main-sec,
 .home-sec-3,
+
 .home-sec-6,
-.home-sec-7,
 .home-sec-2
 {
     min-height: 100vh;
