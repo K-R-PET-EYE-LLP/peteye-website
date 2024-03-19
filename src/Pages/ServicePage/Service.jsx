@@ -296,7 +296,7 @@ const Service = () => {
 
             {/* section3 */}
 
-            <section className={`black-section`} id='fetch-eco-system'  onClick={handleContainerClick} >
+            <section className={`black-section`} id='fetch-eco-system' onClick={handleContainerClick} >
                 <Container>
                     <div className='sec-3-row' >
                         <div className={`sv-sec-3-container-1`} >
@@ -316,7 +316,7 @@ const Service = () => {
                                     <h2 className="big-text">FETCH Ecosystem</h2>
                                     <p className="small-text2">From data nurturing to health guardians, doorstep miracles, and state-of-the-art devices, this is where dreams meet reality.</p>
                                     <button className='secondary-btn' onClick={playVideo} style={{ width: "200px" }}>Play</button>
-                                                                        {/* <Button variant="primary" onClick={playVideo}>Play Video</Button> */}
+                                    {/* <Button variant="primary" onClick={playVideo}>Play Video</Button> */}
                                 </div>
                             )}
                         </div>
