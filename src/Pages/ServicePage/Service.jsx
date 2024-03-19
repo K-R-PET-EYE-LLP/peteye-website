@@ -9,38 +9,38 @@ const images = {
     qrscanner: "https://res.cloudinary.com/djweedhpy/image/upload/v1709702671/Tab/Group_1171276963_ll4f4j.png"
 }
 
-const catdog="https://res.cloudinary.com/djweedhpy/image/upload/v1709701969/Desktop/87fa3bba-f762-4110-93c3-3eeef5671822_2_1_zwxpcw.png",
-dmslogo="https://res.cloudinary.com/djweedhpy/image/upload/v1709898968/Desktop/download_5_a90p2u.png",
-hmslogo="https://res.cloudinary.com/djweedhpy/image/upload/v1709898965/Desktop/download_6_nbvuqs.png",
-dsslogo="https://res.cloudinary.com/djweedhpy/image/upload/v1709898963/Desktop/download_7_thedv4.png",
-logo="https://res.cloudinary.com/djweedhpy/image/upload/v1709897397/Desktop/download_2_yawoh6.png",
-iphone="https://res.cloudinary.com/djweedhpy/image/upload/v1709899144/Desktop/iphone.a47d49252946f7aa7156_1_xctbzr.png",
-hms="https://res.cloudinary.com/djweedhpy/image/upload/v1709899144/Desktop/iphone.a47d49252946f7aa7156_1_xctbzr.png",
-dss="https://res.cloudinary.com/djweedhpy/image/upload/v1709899725/Desktop/dss.e06de17822f950da2313_zl3weq.png",
-Dms1="https://res.cloudinary.com/djweedhpy/image/upload/v1709898957/Desktop/Dms1.af67868bbb85ac478819_f6zvk6.png",
-Dms2="https://res.cloudinary.com/djweedhpy/image/upload/v1709898955/Desktop/Dms2.801c19bf77962eb9cf15_y5zzwc.png",
-Dms3="https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
-Dms4="https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
-hms1="https://res.cloudinary.com/djweedhpy/image/upload/v1709899476/Desktop/hms1.6aac8966a1d691875592_hfbfmz.png",
-hms2="https://res.cloudinary.com/djweedhpy/image/upload/v1709899475/Desktop/hms2.b50551433928ba81907d_namaph.png",
-hms3="https://res.cloudinary.com/djweedhpy/image/upload/v1709899472/Desktop/hms3.89feb92d5324ea6bdae1_oz8vdb.png",
-hms4="https://res.cloudinary.com/djweedhpy/image/upload/v1709899470/Desktop/hms4.7d09629ad3ca9d41441c_mnutzo.png",
-dss1="https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss1.d30e35117902daf30cec_zaqvnv.png",
-dss2="https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss2.c79e91bfc24b8368b019_yaldms.png",
-dss3="https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss3.af36b47cef7a256fab9b_uid1vv.png",
-dss4="https://res.cloudinary.com/djweedhpy/image/upload/v1709899871/Desktop/dss4.a7c952f82bfd6978bb8c_xr2bep.png",
-globe="https://res.cloudinary.com/djweedhpy/image/upload/v1709701956/Desktop/image_16406_nyzunw.png"
+const catdog = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701969/Desktop/87fa3bba-f762-4110-93c3-3eeef5671822_2_1_zwxpcw.png",
+    dmslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898968/Desktop/download_5_a90p2u.png",
+    hmslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898965/Desktop/download_6_nbvuqs.png",
+    dsslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898963/Desktop/download_7_thedv4.png",
+    logo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897397/Desktop/download_2_yawoh6.png",
+    iphone = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899144/Desktop/iphone.a47d49252946f7aa7156_1_xctbzr.png",
+    hms = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899144/Desktop/iphone.a47d49252946f7aa7156_1_xctbzr.png",
+    dss = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899725/Desktop/dss.e06de17822f950da2313_zl3weq.png",
+    Dms1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898957/Desktop/Dms1.af67868bbb85ac478819_f6zvk6.png",
+    Dms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898955/Desktop/Dms2.801c19bf77962eb9cf15_y5zzwc.png",
+    Dms3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
+    Dms4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
+    hms1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899476/Desktop/hms1.6aac8966a1d691875592_hfbfmz.png",
+    hms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899475/Desktop/hms2.b50551433928ba81907d_namaph.png",
+    hms3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899472/Desktop/hms3.89feb92d5324ea6bdae1_oz8vdb.png",
+    hms4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899470/Desktop/hms4.7d09629ad3ca9d41441c_mnutzo.png",
+    dss1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss1.d30e35117902daf30cec_zaqvnv.png",
+    dss2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss2.c79e91bfc24b8368b019_yaldms.png",
+    dss3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss3.af36b47cef7a256fab9b_uid1vv.png",
+    dss4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899871/Desktop/dss4.a7c952f82bfd6978bb8c_xr2bep.png",
+    globe = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701956/Desktop/image_16406_nyzunw.png"
 
-const sec3Vid="https://res.cloudinary.com/djweedhpy/video/upload/v1709705609/videos%20and%20gif/ADD_FAMILY_epvcdw.mp4"
+const sec3Vid = "https://res.cloudinary.com/djweedhpy/video/upload/v1709705609/videos%20and%20gif/ADD_FAMILY_epvcdw.mp4"
 
 
 const Service = () => {
     const { screen } = useParams()
-    
+
     useEffect(() => {
         setActiveContent(screen ?? "dms");
     }, [screen])
-    const location= useLocation()
+    const location = useLocation()
     useEffect(() => {
         const scrollToRef = () => {
             const element = document.getElementById(location.hash.split("#")?.[1]);
@@ -59,10 +59,6 @@ const Service = () => {
     const videoRef = useRef(null);
     const [videoVisible, setVideoVisible] = useState(false);
 
-    const playVideo = () => {
-        setVideoVisible(true);
-        videoRef.current.play();
-    };
 
     const resetVideo = () => {
         setVideoVisible(false);
@@ -70,6 +66,18 @@ const Service = () => {
         videoRef.current.currentTime = 0;
     };
 
+    const handleContainerClick = () => {
+        if (videoVisible) {
+            resetVideo();
+        }
+    };
+
+    const playVideo = () => {
+        setVideoVisible(true);
+        if (videoRef.current) {
+            videoRef.current.play();
+        }
+    };
 
     // end of video
 
@@ -288,10 +296,10 @@ const Service = () => {
 
             {/* section3 */}
 
-            <section className={`black-section`} id='fetch-eco-system' >
+            <section className={`black-section`} id='fetch-eco-system'  onClick={handleContainerClick} >
                 <Container>
-                    <div className='sec-3-row'>
-                        <div className={`sv-sec-3-container-1`}>
+                    <div className='sec-3-row' >
+                        <div className={`sv-sec-3-container-1`} >
                             <div className={`video-container ${videoVisible ? '' : 'hidden'}`}>
                                 <video
                                     ref={videoRef}
@@ -300,14 +308,15 @@ const Service = () => {
                                     onEnded={resetVideo}
                                     className="img-fluid"
                                 />
+                                {/* <button className='secondary-btn' onClick={resetVideo} style={{ position: 'absolute' }}>Go Back</button> */}
                             </div>
                             {!videoVisible && (
                                 <div className='sv-sec-3-content'>
                                     <p className="small-text">Your Pet’s Complete Ecosystem</p>
                                     <h2 className="big-text">FETCH Ecosystem</h2>
                                     <p className="small-text2">From data nurturing to health guardians, doorstep miracles, and state-of-the-art devices, this is where dreams meet reality.</p>
-                                    <button className='secondary-btn' onClick={() => setVideoVisible(true)} style={{ width: "200px" }}>Play</button>
-                                    {/* <Button variant="primary" onClick={playVideo}>Play Video</Button> */}
+                                    <button className='secondary-btn' onClick={playVideo} style={{ width: "200px" }}>Play</button>
+                                                                        {/* <Button variant="primary" onClick={playVideo}>Play Video</Button> */}
                                 </div>
                             )}
                         </div>
