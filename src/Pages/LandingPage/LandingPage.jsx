@@ -24,6 +24,9 @@ twitterSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing
 facebookSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/tyfuaw2c1z2bp0wwnhai.png',
 linkedinSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
 mail='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
+
+
+
 const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
 
 export default function LandingPage() {
