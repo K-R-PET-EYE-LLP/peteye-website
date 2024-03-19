@@ -214,7 +214,7 @@ const Service = () => {
                         <Col className='sec2heading'>
                             <div>
                                 <button className={`btn btn-outline-dark sec2btn ${activeContent === "dms" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("dms")}>
-                                    <img src={dmslogo} />
+                                    <img src={dmslogo} />&emsp;
                                     <span>
                                         Data Management System
                                     </span>
@@ -225,7 +225,7 @@ const Service = () => {
 
 
                                 <button className={`btn btn-outline-dark sec2btn ${activeContent === "hms" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("hms")}>
-                                    <img src={hmslogo} />
+                                    <img src={hmslogo} />&emsp;
                                     <span>
                                         Health Management System
                                     </span>
@@ -235,7 +235,7 @@ const Service = () => {
                             <div>
 
                                 <Button className={`btn btn-outline-dark sec2btn ${activeContent == "dss" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("dss")}>
-                                    <img src={dsslogo} />
+                                    <img src={dsslogo} />&emsp;
                                     <span>
                                         Door Step Service
                                     </span>
@@ -245,7 +245,7 @@ const Service = () => {
                             <div>
 
                                 <Button className={`btn btn-outline-dark sec2btn ${activeContent == "cms" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("cms")}>
-                                    <img src={dsslogo} />
+                                    <img src={dsslogo} />&emsp;
                                     <span>
                                         Coming Soon
                                     </span>

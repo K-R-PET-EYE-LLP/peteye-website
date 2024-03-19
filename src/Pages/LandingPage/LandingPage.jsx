@@ -4,23 +4,20 @@ import './LandingPage.css'
 import ImageCard from './components/ImageCard'
 import VideoModal from './components/VideoModal'
 import AOS from 'aos';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
 
-
-const petEyeImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
-  mainImg1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
-  mainImg2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
-  mainImg3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
-  mainImg4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
-  mainImg5 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
-  sec2Img1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
-  wheelImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710829864/shadow_card_carousel_gpsdzx.png",
-  sec5Img = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
-  mobileImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
-  playStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
-  appStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
-  landingFooter = "https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png"
+const petEyeImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
+mainImg1="https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
+mainImg2="https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
+mainImg3="https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
+mainImg4="https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
+mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
+sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
+wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
+sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
+mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896905/Landing%20page/desktop/iphone-12-pro--silver.8e03b609b6a588e53d8c_qeifvh.png",
+playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
+appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
+landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png"
 
 const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
 
@@ -150,7 +147,7 @@ export default function LandingPage() {
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{ marginTop: '-55px' }} data-aos="fade-up">
+          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
@@ -253,9 +250,42 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
+       
       </section>
+
+        {/* <img src={landingFooter} alt=""  /> */}
       <section className='home-sec-7'>
-        <img src={landingFooter} alt="" />
+        <div className='lp-footer-logo-div'>
+        <img  className='lp-footer-logo'  src="https://res.cloudinary.com/djweedhpy/image/upload/v1710753625/Landing%20page/desktop/peteye_smtpuu.png" alt="" />
+        </div>
+
+        <div className='footer-sm-main-div'>
+            
+          <div onClick={()=> window.location.href = 'https://www.w3schools.com/css/css_padding.asp'} className='sm-sub-small-div' >
+          <img  data-aos="fade-up" className='social-img-sub' src={youtubeSm} alt="" />
+          </div>
+          <div onClick={()=> window.location.href = 'https://imvenx.github.io/multiglancer/#/'} className='sm-sub-div'>
+          <img  data-aos="fade-up" className='social-img-main' src={instaSm} alt="" />
+          </div>
+          <div onClick={()=> window.location.href = 'https://github.com/'} className='sm-sub-div'>
+          <img  data-aos="fade-up" className='social-img-main' src={twitterSm} alt="" />
+          </div>
+          <div onClick={()=> window.location.href = 'https://www.w3schools.com/css/css_padding.asp'} className='sm-sub-div'>
+          <img  data-aos="fade-up" className='social-img-main' src={facebookSm} alt="" />
+          </div>
+          <div onClick={()=> window.location.href = 'https://imvenx.github.io/multiglancer/#/'} className='sm-sub-div'>
+          <img  data-aos="fade-up" className='social-img-main' src={linkedinSm} alt="" />
+          </div>
+          <div onClick={()=> window.location.href = 'https://github.com/'} className='sm-sub-small-div'>
+          <img  data-aos="fade-up" className='social-img-sub' src={mail} alt="" />
+          </div>
+       </div>
+       <div  className='lp-para'>
+          <p  className='lp-para1'>Terms & Conditions</p>
+          <p className='lp-para2' >© 2023 K R PET EYE LLP. All Rights Reserved. </p>
+        </div>
+
+
       </section>
       <VideoModal videoSrc={videoToPlay} setVideoSrc={setVideoToPlay}></VideoModal>
 
