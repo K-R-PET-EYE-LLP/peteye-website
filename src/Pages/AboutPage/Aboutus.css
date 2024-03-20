@@ -7,7 +7,7 @@ body {
   padding: 1rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 1rem;
 }
 
@@ -89,8 +89,8 @@ body {
   .paragraph {
     width: 625px;
     font-size: 1rem;
+    .peteyeimg {
   }
-  .peteyeimg {
     width: 100%;
     max-width: 17.49319rem;
     height: auto;

@@ -22,7 +22,7 @@ export default function SupportPage() {
         <div>
         <section className="support-main-sec">
             <div className="support-main-sec-title" data-aos="fade-up">
-                <span>Support</span>
+                {/* <span>Support</span> */}
             </div>
             <div className="support-main-sec-head" data-aos="fade-up">
                 <h1>Hi! How can I help you?</h1>
@@ -67,7 +67,7 @@ export default function SupportPage() {
                 </div>
             </div>
             <div className="support-sec-btn">
-                <button className='primary-btn' data-aos="fade-up">Contact Us</button>
+                <button className='primary-btn contact-btn' data-aos="fade-up">Contact Us</button>
             </div>
         </section>
         </div>

@@ -13,11 +13,15 @@
     display: flex;
     justify-content: center;
 }
+.contact-btn{
+    height: 9vh;
+    font-size: 29px !important ;
+}
 
-.support-main-sec-search-box .search-box-container{
-    width: 901px;
+.support-main-sec-search-box .search-box-container {
+    width: 610px;
     max-width: 90%;
-    height: 89px;
+    height: 51px;
     display: flex;
     justify-content: space-between;
     background-color: var(--main-grey);
