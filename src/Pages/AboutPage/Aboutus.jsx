@@ -101,7 +101,7 @@ const Section1 = () => {
               <Col xs={12} md={4} lg={4} >
                 <div className="text-center">
                   <img src={Image7} alt="Your Image" className="centered-image7 img-fluid" />
-                  <h1 className='text1'>koushik Gaja</h1>
+                  <h1 className='text1'>Koushik Gaja</h1>
                   <h3 className='text2'>Managing partner</h3>
                 </div>
               </Col>

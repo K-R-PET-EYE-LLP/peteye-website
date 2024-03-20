@@ -39,9 +39,10 @@ const LinkSection = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
+                className='email-box'
               // className="form-control mb-2"
               />
-              <button> Join Us</button>
+              <button style={{textDecoration:'none', color:'black'}}> Join Us</button>
             </div>
           </div>
           <div className="container d-flex justify-content-center">
