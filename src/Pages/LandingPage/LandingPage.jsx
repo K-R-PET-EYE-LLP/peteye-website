@@ -153,7 +153,7 @@ export default function LandingPage() {
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{marginTop:'-80px'}} data-aos="fade-up">
+          <div className="sec-container" style={{marginTop:'-60px'}} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
@@ -214,11 +214,11 @@ export default function LandingPage() {
             })
           }
         </div> */}
-        <div className="home-sec-4-wheel-row container mt-5">
+        {/* <div className="home-sec-4-wheel-row container mt-5">
           <div className="home-sec-4-wheel-container">
             <img src={wheelImg} style={{ transform: `rotate(${imageRotation}deg)` }} alt="" />
           </div>
-        </div>
+        </div> */}
 
       </section>
       <section className="home-sec-5">

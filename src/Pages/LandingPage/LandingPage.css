@@ -204,8 +204,8 @@
 .home-sec-2 {
     gap: 10px;
     padding: 100px;
-    padding-top: 30px !important;
     display: flex;
+    padding-top: 15px !important;
     justify-content: center;
  
 }
@@ -225,7 +225,7 @@
 
 .home-sec-2 .sec-containers {
     display: flex;
-    gap: 300px;
+    gap: 200px;
 }
 
 .home-sec-2 .sec-container-header h5 {
@@ -571,7 +571,7 @@
 .home-sec-6-content {
     display: flex;
     flex-direction: column;
-
+    text-align: center;
 
     gap: 20px;
 
@@ -1141,6 +1141,10 @@ s
     .home-sec-7{
         margin-top: -40px;
     }
+    .home-sec-6 {
+        padding: 60px 0px;
+        padding-left: 10px;
+    }
     .footer-sm-main-div{
         padding: 20px;
         margin-top: -30px;
@@ -1435,3 +1439,13 @@ s
         height: 360px;
     }
 }
+
+
+
+
+
+
+
+
+
+
