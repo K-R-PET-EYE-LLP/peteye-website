@@ -60,7 +60,7 @@ const Section1 = () => {
         {
           <div>
             <img src={Image3} alt="img" className="peteyeimg img-fluid" />
-            <p className='para1'>With PetEYE</p>
+            <p style={{marginTop:'-30px'}} className='para1'>With PetEYE</p>
             <p className='para2'>"We envision  a world where Every Pet is Safe and Loved"</p>
             <img src={Image4} alt="img" className="momdogimg img-fluid" />
           </div>
@@ -109,7 +109,7 @@ const Section1 = () => {
                 <div className="text-center">
                   <img src={Image8} alt="Your Image" className="centered-image8 img-fluid" />
                   <h1 className='text1'>Goverdhan Reddy</h1>
-                  <h3 className='text2'>Managing partner</h3>
+                  <h3 className='text2'>Director of Operations</h3>
                 </div>
               </Col>
 
@@ -142,7 +142,7 @@ const Section1 = () => {
       {/* Support Section */}
 
       <section className="support" id="need-support">
-        <div className="container">
+        <div className="container support-con">
           <div className="row justify-content-center">
             <div className="col-md-12">
               <p className="supportPara">Need Support?</p>
