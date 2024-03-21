@@ -6,27 +6,25 @@ import ImageCard from './components/ImageCard'
 import VideoModal from './components/VideoModal'
 import AOS from 'aos';
 
-const petEyeImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
-  mainImg1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
-  mainImg2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
-  mainImg3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
-  mainImg4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
-  mainImg5 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
-  sec2Img1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
-  wheelImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
-  sec5Img = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
-  mobileImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
-  playStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
-  appStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
-  landingFooter = "https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png",
-  youtubeSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/gxa9edwvqebzykvgqqa3.png',
-  instaSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/bok9plgfjxknerbrqini.png',
-  twitterSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/uvqiwboro3byuwdrgzsf.png',
-  facebookSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/tyfuaw2c1z2bp0wwnhai.png',
-  linkedinSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
-  mail = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
-
-
+const petEyeImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
+mainImg1="https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
+mainImg2="https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
+mainImg3="https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
+mainImg4="https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
+mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
+sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
+wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
+sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
+mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896905/Landing%20page/desktop/iphone-12-pro--silver.8e03b609b6a588e53d8c_qeifvh.png",
+playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
+appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
+landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png",
+youtubeSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/gxa9edwvqebzykvgqqa3.png',
+instaSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/bok9plgfjxknerbrqini.png',
+twitterSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/uvqiwboro3byuwdrgzsf.png',
+facebookSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/tyfuaw2c1z2bp0wwnhai.png',
+linkedinSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
+mail='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
 
 const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
 
@@ -119,7 +117,7 @@ export default function LandingPage() {
       <section className="home-main-sec home-sec">
         <div className="home-head-tag" data-aos="fade-up">
           <div className="home-head">
-            <img src={petEyeImg} alt="" data-aos="fade-up" data-aos-delay="200" />
+            <img src={petEyeImg} alt="" data-aos="fade-up" className='peteye-img' data-aos-delay="200" />
           </div>
           <span>Nurturing Bonds Ensuring Safety</span>
           <button className='primary-btn'>Explore</button>
@@ -167,7 +165,7 @@ export default function LandingPage() {
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{ marginTop: '-55px' }} data-aos="fade-up">
+          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
@@ -232,8 +230,7 @@ export default function LandingPage() {
           <div className="home-sec-4-wheel-container">
             <img src={wheelImg} style={{ transform: `rotate(${imageRotation}deg)` }} alt="" />
           </div>
-        </div> */}
-
+        </div>
 
       </section>
       <section>
