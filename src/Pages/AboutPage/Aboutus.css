@@ -846,3 +846,54 @@ body {
   margin-top: 5px;
 }
 }
+
+@media screen and (min-width: 1360px) {
+  .about.img1 {
+    width: 360px;
+    margin-top: 10px;
+}
+.paragraph {
+  width: 825px !important;
+  font-size: 1rem;
+  width: 100%;
+  /* max-width: 17.49319rem; */
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  margin-top: 30px;
+}.momdogimg {
+  width: 650px;
+  margin-top: -14%;
+  margin-bottom: 250px;
+}
+.peteyeimg {
+  width: 100%;
+  max-width: 17.49319rem;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  margin-top: 0px;
+}
+.support-con {
+  margin-top: -70px;
+  margin-bottom: 30px;
+}
+.image121 {
+  width: 11.5235rem;
+  height: 11.13744rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.image12 {
+  width: 11.5235rem;
+  height: 12.13744rem;
+}
+}
