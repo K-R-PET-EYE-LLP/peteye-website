@@ -176,7 +176,7 @@ const Service = () => {
                     <div className='sv-sec-2-img-container'>
                         <img src={dss} alt="" />
                     </div>
-                    <p className='dms3'> Get ready for some thrilling developments! Our forthcoming app is set to transform the way you track your pets, promising an unparalleled experience. Brace yourself for real-time health insights, personalized geofencing options, and improved connectivity that will elevate your pet monitoring to new heights. With our unwavering commitment to your pet's safety and happiness, rest assured that their well-being remains our foremost concern. Keep an eye out for updates – exciting things are on the horizon!</p>
+                    <p className='dms3'> Get ready for some thrilling updates! Our forthcoming app is set to transform the way you track your pets, promising an unparalleled experience. Brace yourself for real-time health insights, and improved connectivity that will elevate your pet monitoring to new heights. With our unwavering commitment to your pet's safety and happiness, rest assured that their well-being remains our foremost concern. Keep an eye out for updates – exciting things are on the horizon!</p>
                 </div>
                 <div className="sv-sec-2-container-2">
                     <img src={cms} alt='img2' className='img2' />
@@ -213,7 +213,7 @@ const Service = () => {
                             <img
                                 src={catdog}
                                 alt="Big Image"
-                                className="img-fluid catimg"
+                                className="catimg"
                             />
                         </Col>
                     </Row>
