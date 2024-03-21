@@ -85,55 +85,6 @@ body {
 
 }
 
-@media screen and (min-width: 1068px) {
-  .paragraph {
-    width: 625px;
-    font-size: 1rem;
-    .peteyeimg {
-  }
-    width: 100%;
-    max-width: 17.49319rem;
-    height: auto;
-    flex-shrink: 0;
-    display: block;
-    margin: 0 auto;
-    mix-blend-mode: multiply;
-    margin-top: 30px;
-  }
-  .about.img1 {
-    width: 470px;
-}
-.section-container {
-  margin-top: 7%;
-}
-.support-con {
-  margin-top: -30px;
-}
-.email-box{
-  width: 50%  !important;
-}
-
-.teambox {
-  padding: 50px;
-  margin-top: -145px !important;
-}
-
-.centered-image7,
-.centered-image8,
-.centered-image9,
-.centered-image11 {
-  width: 7.01294rem;
-  height: 7.01294rem;
-  flex-shrink: 0;
-  border-radius: 13.01681rem;
-}
-
-.support-con {
-  /* margin-top: -70px; */
-  margin-bottom: 30px;
-}
-}
-
 
 
 
@@ -469,9 +420,7 @@ body {
     font-size: 1.5rem;
   }
 
-  /* .teamcontainer {
-    margin-top: -20%;
-  } */
+  
 
 
 }
@@ -499,7 +448,7 @@ body {
   } */
 }
 
-@media screen and (min-width:767px) and (max-width:1300px) {
+/* @media screen and (min-width:767px) and (max-width:1300px) {
   .section-container {
     margin-top: 15%;
   }
@@ -507,17 +456,8 @@ body {
   .text-container {
     margin-top: 40%;
   }
-}
-
-
-@media screen and (min-width:767px) {
-  /* .teamcontainer {
-    margin-top: -35%;
-  } */
-
-
-
-}
+} */
+ 
 
 @media screen and (min-width: 1600px) {
   .text-container {
@@ -601,7 +541,7 @@ body {
   line-height: normal;
 }
 
-@media screen and (max-width:767px) {
+/* @media screen and (max-width:767px) {
   .support-content {
     text-align: center;
   }
@@ -613,7 +553,7 @@ body {
   .image12 {
     margin-left: 6%;
 
-  }
+  } */
 
   .support-item {
     display: flex;
@@ -621,7 +561,7 @@ body {
     align-items: center;
     flex-direction: column;
   }
-}
+
 
 /* padding for whole page */
 
@@ -664,9 +604,23 @@ body {
   margin-top: 50px;
 }
 
-@media(max-width:992px){
+@media (max-width: 1024px){
+.abt .text-container {
+    margin-top: 50%;
+}
+.momdogimg {
+  width: 700px;
+}
+}
+ 
+
+
+
+
+@media(min-width:768px){
+  
   .about.img1{
-    width: 620px;
+    width: 460px;
     margin-top: 80px;
   }
   .abt .text-container {
@@ -688,11 +642,11 @@ body {
   color: #262525;
   text-align: center;
   font-family: "Open Sans";
-  font-size: -0.07869rem;
+  font-size: large;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 100px;
 }
 .peteyeimg {
@@ -706,9 +660,9 @@ body {
   margin-top: 80px;
 }
 .momdogimg {
-  width: 1050px;
+  width: 650px;
   margin-top: -1%;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
 }
 .text1 {
   color: #FFF;
@@ -799,15 +753,96 @@ body {
   height: 56px;
 }
 
+
 }
-@media (max-width: 1024px){
-.abt .text-container {
-    margin-top: 50%;
+
+
+
+@media screen and (min-width: 992px) {
+  .paragraph {
+    width: 625px !important;
+    font-size: 1rem;
+    width: 100%;
+    /* max-width: 17.49319rem; */
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    mix-blend-mode: multiply;
+    margin-top: 30px;
+  }
+  .about.img1 {
+    width: 400px;
+    margin-top: 10px;
 }
 .momdogimg {
-  width: 700px;
+  width: 650px;
+  margin-top: -1%;
+  margin-bottom: 250px;
 }
+.peteyeimg {
+  width: 100%;
+  max-width: 17.49319rem;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  margin-top: 10px;
 }
-@media (max-width: 650px){
+.section-container {
+  margin-top: 7%;
+}
+.support-con {
+  margin-top: -40px;
+}
+.email-box{
+  width: 50%  !important;
+}
 
+.teambox {
+  padding: 50px;
+  margin-top: -85px !important;
+}
+
+.centered-image7,
+.centered-image8,
+.centered-image9,
+.centered-image11 {
+  width: 7.01294rem;
+  height: 7.01294rem;
+  flex-shrink: 0;
+  border-radius: 13.01681rem;
+}
+
+.support-con {
+  /* margin-top: -70px; */
+  margin-bottom: 30px;
+}
+.supportbtn {
+  width: 14.95831rem;
+  height: 2.96675rem;
+  flex-shrink: 0;
+  border-radius: 0.86631rem;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.48288rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+}
+.heading1 {
+  color: #000;
+  text-align: center;
+  font-family: Prata;
+  font-size: 2.38194rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 18px;
+  margin-top: 5px;
+}
 }

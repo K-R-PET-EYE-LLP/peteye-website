@@ -395,10 +395,16 @@
     margin-left: 1%;
     margin-bottom: -10%;
   }
+  
 
 
 }
-
+@media(min-width:768px){
+  .paragraph-text {
+    margin-left: 14% !important;
+    max-width: 70%;
+  }
+}
 
 
 
