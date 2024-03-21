@@ -1,9 +1,23 @@
 .gs {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    /* display: flex;
+    justify-content: space-between; */
+    /* padding-top: 30px; */
 }
+
+
+.gs-contain{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gs-container-sec-1-item {
+    width: 50%; /* Adjust width to occupy half of the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+
 
 .gs-container-sec-1,
 .gs-container-sec-2 {
@@ -18,13 +32,16 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     font-family: Port Lligat Sans;
+    width: 100%;
 }
 
 .gs-container-sec-2-box img {
-    width: 100%;
-    max-height: 540px;
+    width: 750px;
+    height: 465px;
     object-fit: fill;
 }
 
@@ -65,16 +82,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-height: 50vh;
+    /* max-height: 50vh; */
     overflow: scroll;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
+    max-width: 100%;
 }
 
 .gs-container-sec-1-item {
-    width: 100%;
-    display: flex;
+    /* width: 550px;
+    display: flex; */
     gap: 10px;
     height: auto;
     cursor: pointer;
@@ -134,8 +151,8 @@
 }
 
 .gs-container-sec-1-item img {
-    width: 150px;
-    height: 150px;
+    width: 523px;
+    height: 291px;
     min-height: 150px;
     min-width: 150px;
 }
