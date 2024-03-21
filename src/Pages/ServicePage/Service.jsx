@@ -21,7 +21,7 @@ const catdog = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701969/De
     cms = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932443/Desktop/iphone-12-pro--silver_mklqti.png",
     Dms1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898957/Desktop/Dms1.af67868bbb85ac478819_f6zvk6.png",
     Dms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932808/Desktop/Frame_1171277083_q2b7nt.png",
-    Dms3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899232/Desktop/Dms4.adaf400a24ce05ca12e9_z1bgdr.png",
+    Dms3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710993705/Desktop/Frame_1171277085_f6oakr.png",
     Dms4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
     hms1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899476/Desktop/hms1.6aac8966a1d691875592_hfbfmz.png",
     hms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899475/Desktop/hms2.b50551433928ba81907d_namaph.png",
@@ -213,7 +213,7 @@ const Service = () => {
                             <img
                                 src={catdog}
                                 alt="Big Image"
-                                className="img-fluid catimg"
+                                className="catimg"
                             />
                         </Col>
                     </Row>

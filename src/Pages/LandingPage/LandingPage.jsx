@@ -227,6 +227,9 @@ export default function LandingPage() {
           }
         </div>
          <div className="home-sec-4-wheel-row container mt-5">
+
+     <div className="home-sec-4-wheel-row container mt-5">
+
           <div className="home-sec-4-wheel-container">
             <img src={wheelImg} style={{ transform: `rotate(${imageRotation}deg)` }} alt="" />
           </div>
