@@ -225,12 +225,12 @@ export default function LandingPage() {
               return <StoryCard item={item} index={index} length={6} />
             })
           }
-        </div> */}
-        {/* <div className="home-sec-4-wheel-row container mt-5">
+        </div>
+     <div className="home-sec-4-wheel-row container mt-5">
           <div className="home-sec-4-wheel-container">
             <img src={wheelImg} style={{ transform: `rotate(${imageRotation}deg)` }} alt="" />
           </div>
-        </div>
+        </div> */}
 
       </section>
       <section>
