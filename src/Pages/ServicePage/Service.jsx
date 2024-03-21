@@ -10,16 +10,18 @@ const images = {
 }
 
 const catdog = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701969/Desktop/87fa3bba-f762-4110-93c3-3eeef5671822_2_1_zwxpcw.png",
-    dmslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898968/Desktop/download_5_a90p2u.png",
-    hmslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898965/Desktop/download_6_nbvuqs.png",
-    dsslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898963/Desktop/download_7_thedv4.png",
+    dmslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932392/Desktop/mdi_files_k3leiy.png",
+    hmslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932385/Desktop/maki_doctor_a1p9tu.png",
+    dsslogo = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932388/Desktop/mingcute_door-fill_fgkcs9.png",
+    cmslogo ="https://res.cloudinary.com/djweedhpy/image/upload/v1710932384/Desktop/line-md_loading-twotone-loop_urqbze.png",
     logo = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897397/Desktop/download_2_yawoh6.png",
     iphone = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899144/Desktop/iphone.a47d49252946f7aa7156_1_xctbzr.png",
     hms = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899144/Desktop/iphone.a47d49252946f7aa7156_1_xctbzr.png",
     dss = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899725/Desktop/dss.e06de17822f950da2313_zl3weq.png",
+    cms = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932443/Desktop/iphone-12-pro--silver_mklqti.png",
     Dms1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898957/Desktop/Dms1.af67868bbb85ac478819_f6zvk6.png",
-    Dms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898955/Desktop/Dms2.801c19bf77962eb9cf15_y5zzwc.png",
-    Dms3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
+    Dms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710932808/Desktop/Frame_1171277083_q2b7nt.png",
+    Dms3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899232/Desktop/Dms4.adaf400a24ce05ca12e9_z1bgdr.png",
     Dms4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709898959/Desktop/Dms3.990afe8ab787c2ee5cf0_jpejv3.png",
     hms1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899476/Desktop/hms1.6aac8966a1d691875592_hfbfmz.png",
     hms2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899475/Desktop/hms2.b50551433928ba81907d_namaph.png",
@@ -27,7 +29,7 @@ const catdog = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701969/De
     hms4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899470/Desktop/hms4.7d09629ad3ca9d41441c_mnutzo.png",
     dss1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss1.d30e35117902daf30cec_zaqvnv.png",
     dss2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss2.c79e91bfc24b8368b019_yaldms.png",
-    dss3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899872/Desktop/dss3.af36b47cef7a256fab9b_uid1vv.png",
+    dss3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710934709/Desktop/Frame_1171277083_idpl7y.png",
     dss4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709899871/Desktop/dss4.a7c952f82bfd6978bb8c_xr2bep.png",
     globe = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701956/Desktop/image_16406_nyzunw.png"
 
@@ -78,6 +80,9 @@ const Service = () => {
             videoRef.current.play();
         }
     };
+    const handleVideoClick = (e) => {
+        e.stopPropagation(); // Prevent the click event from bubbling up
+    };
 
     // end of video
 
@@ -103,10 +108,10 @@ const Service = () => {
                             <img src={iphone} alt="" />
                         </div>
                         <div>
-                            <img src={Dms1} alt='image1' className='img1' />
-                            <img src={Dms2} alt='image1' className='img1' />
-                            <img src={Dms3} alt='image1' className='img1' />
                             <img src={Dms4} alt='image1' className='img1' />
+                            <img src={Dms1} alt='image1' className='img1' />
+                            <img src={Dms3} alt='image1' className='img1' />
+                            <img src={Dms2} alt='image1' className='img1' />
                         </div>
                         <p className='dms3'>Discover unparalleled data control and efficiency with our Data  Management Service. Experience the peace of mind that comes with  top-tier security, the ease of a user-friendly interface, and the power to maximize your data's impact.</p>
                     </div>
@@ -127,9 +132,9 @@ const Service = () => {
                         </div>
                         <div>
                             <img src={hms1} alt='image1' className='img1' />
-                            <img src={hms2} alt='image1' className='img1' />
                             <img src={hms3} alt='image1' className='img1' />
                             <img src={hms4} alt='image1' className='img1' />
+                            <img src={hms2} alt='image1' className='img1' />
                         </div>
                         <p className='dms3'>Elevate your pet's well-being with our Pet Health Management   Service. We offer a comprehensive solution that combines   advanced technology, personalized care, and convenience to  ensure your furry friend enjoys the best possible health and  happiness.</p>
                     </div>
@@ -149,10 +154,10 @@ const Service = () => {
                             <img src={dss} alt="" />
                         </div>
                         <div>
-                            <img src={dss1} alt='image1' className='img1' />
+                            <img src={dss4} alt='image1' className='img1' />
                             <img src={dss2} alt='image1' className='img1' />
                             <img src={dss3} alt='image1' className='img1' />
-                            <img src={dss4} alt='image1' className='img1' />
+                            <img src={dss1} alt='image1' className='img1' />
                         </div>
                         <p className='dms3'> Elevate your pet's well-being with our Pet Health Management Service. We offer a comprehensive solution that combines advanced technology, personalized care, and convenience to ensure your furry friend enjoys the best possible health and  happiness.</p>
                     </div>
@@ -162,10 +167,21 @@ const Service = () => {
                 </div>;
             case "cms":
                 return <div className='section2'>
-                    <div className="sv-sec-2-container-1">
-                        <p>Coming soon...</p>
+                <div className="sv-sec-2-container-1">
+                    <div>
+
+                        {/* <p className='dms1'>DSS</p> */}
+                        <h1 className='dms2'>Coming Soon</h1>
                     </div>
+                    <div className='sv-sec-2-img-container'>
+                        <img src={dss} alt="" />
+                    </div>
+                    <p className='dms3'> Get ready for some thrilling developments! Our forthcoming app is set to transform the way you track your pets, promising an unparalleled experience. Brace yourself for real-time health insights, personalized geofencing options, and improved connectivity that will elevate your pet monitoring to new heights. With our unwavering commitment to your pet's safety and happiness, rest assured that their well-being remains our foremost concern. Keep an eye out for updates – exciting things are on the horizon!</p>
                 </div>
+                <div className="sv-sec-2-container-2">
+                    <img src={cms} alt='img2' className='img2' />
+                </div>
+            </div>;
             default:
                 return <p>Default Content</p>;
         }
@@ -245,7 +261,7 @@ const Service = () => {
                             <div>
 
                                 <Button className={`btn btn-outline-dark sec2btn ${activeContent == "cms" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("cms")}>
-                                    <img src={dsslogo} />&emsp;
+                                    <img src={cmslogo} />&emsp;
                                     <span>
                                         Coming Soon
                                     </span>
@@ -264,34 +280,6 @@ const Service = () => {
 
                 </Container>
 
-                {/* mobile layout */}
-
-                {/* <Container className="d-lg-none ">
-
-                    <Row className='mb-4 mobilesec2'>
-                        <Col className='sec21heading'>
-                            <Button className={`sec21btn ${activeContent === "content1" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("content1")}>
-                                <img src={dmslogo} />
-                            </Button>{' '}
-                            <Button className={`sec21btn ${activeContent === "content2" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("content2")}>
-                                <img src={hmslogo} />
-                            </Button>{' '}
-                            <Button className={`sec21btn ${activeContent === "content3" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("content3")}>
-                                <img src={dsslogo} />
-                            </Button>{' '}
-                            <Button className={`sec21btn ${activeContent === "content4" ? 'active-btn' : ''}`} onClick={() => handleButtonClick("content4")}>
-                                <img src={dsslogo} />
-                            </Button>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <div className="content-box">
-                                {renderContent(activeContent)}
-                            </div>
-                        </Col>
-                    </Row>
-                </Container> */}
             </section>
 
             {/* section3 */}
@@ -300,7 +288,7 @@ const Service = () => {
                 <Container>
                     <div className='sec-3-row' >
                         <div className={`sv-sec-3-container-1`} >
-                            <div className={`video-container ${videoVisible ? '' : 'hidden'}`}>
+                            <div className={`video-container ${videoVisible ? '' : 'hidden'}`} onClick={handleVideoClick}>
                                 <video
                                     ref={videoRef}
                                     src={sec3Vid}
@@ -362,39 +350,6 @@ const Service = () => {
                             />
                         </div>
                     </div>
-
-
-                    {/* Desktop layout */}
-                    {/* <Row className="d-none d-md-flex">
-                        <Col md={6}>
-                            <div className="left-content">
-                                <img
-                                    src={logo}
-                                    alt="Left Image"
-                                    className="img-fluid left-image"
-                                />
-                                <span className="left-small-text">TAG</span>
-                            </div>
-                            <h2 className="scannerbt">Never lose a pet again.</h2>
-                            <p className="scannerst">Echo is a revolutionary pet identification tag with built-in NFC and QR code technology. Access your pet's profile with a simple scan, sharing vital information when needed.</p>
-                            <div className="button-container">                                <Button variant="primary" className="mr-2 button1">
-                                Buy
-                            </Button>
-                                <Button variant="primary" className='button2'>
-                                    Find Out More
-                                </Button>
-                            </div>
-
-                        </Col>
-                        <Col md={6} className="text-center">
-                            <img
-                                src={scanner}
-                                alt="Right Image"
-                                className="img-fluid right-image scannerimg"
-                            />
-                        </Col>
-                    </Row> */}
-
                 </Container>
             </section>
 

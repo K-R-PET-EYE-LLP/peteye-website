@@ -7,6 +7,7 @@ import Aboutus from './Pages/AboutPage/Aboutus'
 import Service from './Pages/ServicePage/Service';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import SupportPage from './Pages/SupportPage/SupportPage';
+import Lheader from './Components/LandingHeader/Lheader';
 import 'aos/dist/aos.css';
 import GuidePage from './Pages/GuidePage/GuidePage';
 import { useEffect } from 'react';
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
     path: "/guide/:section",
     element: <GuidePage/>,
   },
+  // {
+  //   path:"/",
+  //   element:<Lheader/>
+  // }
 ]);
 
 

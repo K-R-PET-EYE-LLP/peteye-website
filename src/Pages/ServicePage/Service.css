@@ -121,7 +121,7 @@
 .dms2 {
     color: #000;
     font-family: Prata;
-    font-size: 2.11569rem;
+    font-size: 2.6511569rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -145,18 +145,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
     gap: 100px;
 }
 .sv-sec-2-container-1{
     display: flex;
     flex-direction: column;
     min-height: auto;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 80px;
 }
 .sv-sec-2-container-2 img{
-    height: 627px;
+    height: 600px;
 }
 
 .sec2btn {
@@ -165,13 +164,14 @@
     padding: 0.498863rem 1.278rem;
     gap: 0.93656rem;
     border-radius: 1.04063rem;
-    background-color: white;
-    color: #000;
+    background-color: #d0d0d0;
+    color: #fff;
     font-family: "Port Lligat Sans";
     font-size: 0.5206094rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 595;
     line-height: normal;
+    border: none;
 }
 
 .active-btn {
@@ -253,9 +253,9 @@
 @media screen and (min-width:767px) {
 
     .img1 {
-        width: 7.87538rem;
-        height: 7.87644rem;
-        margin-right: 3rem;
+        width: 8.9487538rem;
+        height: 8.9487644rem;
+        margin-right: 2rem;
         margin-bottom: 20px;
 
     }
@@ -671,7 +671,7 @@ text-align: center;    }
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 20px;
 }
 .sv-sec-3-container-1 .video-container{
     width: 100%;
@@ -689,7 +689,7 @@ text-align: center;    }
 }
 .sv-sec-2-container-1>p{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .sv-sec-2 .sec2heading>div>span{
     display: none;
@@ -719,14 +719,15 @@ text-align: center;    }
         height: 77px;
         border-width: 1px;
         outline: none;
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 0px;
+        align-items: center; */
+        padding-top: 19px;
     }
     .sv-sec-2 .sec2heading button img{
         width: 30px;
         object-fit: contain;
+        
     }
     .sv-sec-2 .sec2heading button span{
         display: none;

@@ -1,29 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../Components/Header/Header'
+import Lheader from '../../Components/LandingHeader/Lheader'
 import './LandingPage.css'
 import ImageCard from './components/ImageCard'
 import VideoModal from './components/VideoModal'
 import AOS from 'aos';
 
-const petEyeImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
-mainImg1="https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
-mainImg2="https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
-mainImg3="https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
-mainImg4="https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
-mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
-sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
-wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
-sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
-mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
-playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
-appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
-landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png",
-youtubeSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/gxa9edwvqebzykvgqqa3.png',
-instaSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/bok9plgfjxknerbrqini.png',
-twitterSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/uvqiwboro3byuwdrgzsf.png',
-facebookSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/tyfuaw2c1z2bp0wwnhai.png',
-linkedinSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
-mail='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
+const petEyeImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png",
+  mainImg1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406587/Mohit/Frame_1171277161_kvugnv.png",
+  mainImg2 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406592/Mohit/Frame_1171277162_qtzkcz.png",
+  mainImg3 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406581/Mohit/Frame_1171277159_ae5ku0.png",
+  mainImg4 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Frame_1171277163_djruel.png",
+  mainImg5 = "https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
+  sec2Img1 = "https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
+  wheelImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
+  sec5Img = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
+  mobileImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
+  playStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
+  appStoreBadge = "https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
+  landingFooter = "https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png",
+  youtubeSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/gxa9edwvqebzykvgqqa3.png',
+  instaSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/bok9plgfjxknerbrqini.png',
+  twitterSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/uvqiwboro3byuwdrgzsf.png',
+  facebookSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/tyfuaw2c1z2bp0wwnhai.png',
+  linkedinSm = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
+  mail = 'https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
 
 
 
@@ -87,14 +88,24 @@ export default function LandingPage() {
   const step = 360 / 21; // Assuming 21 items
 
   const imageUrls = [
-    'https://picsum.photos/600?1',
-    'https://picsum.photos/600?2',
-    'https://picsum.photos/600?3',
-    // Add URLs for all 21 items here
-    // Ensure the array length matches the number of items
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909930/Landing%20page/desktop/Frame_1171277285_rv0xux.jpg',
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909929/Landing%20page/desktop/Frame_1171277287_lxmepu.jpg',
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909930/Landing%20page/desktop/Frame_1171277291_bgumsl.jpg',
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909930/Landing%20page/desktop/Frame_1171277286_tjmvzl.jpg',
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909930/Landing%20page/desktop/Frame_1171277290_tpptvp.jpg',
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909930/Landing%20page/desktop/Frame_1171277289_e4ilhb.jpg',
+    'https://res.cloudinary.com/djweedhpy/image/upload/v1710909930/Landing%20page/desktop/Frame_1171277288_pschtj.jpg'
   ];
-  
 
+  const linkUrls = [
+    'https://g.co/kgs/8C7oX5f',
+    'https://g.co/kgs/PDjcnf9',
+    'https://g.co/kgs/Md34hcb',
+    'https://g.co/kgs/aAC8GGz',
+    'https://g.co/kgs/kDFrnm1',
+    'https://maps.app.goo.gl/ApDoviV7A3nETvXT8',
+    'https://g.co/kgs/dgtdrRP'
+  ];
 
 
 
@@ -104,6 +115,7 @@ export default function LandingPage() {
   return (
     <div className="main landing scroll-snap">
       <Header></Header>
+      {/* <Lheader/> */}
       <section className="home-main-sec home-sec">
         <div className="home-head-tag" data-aos="fade-up">
           <div className="home-head">
@@ -155,7 +167,7 @@ export default function LandingPage() {
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
+          <div className="sec-container" style={{ marginTop: '-55px' }} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
@@ -216,13 +228,28 @@ export default function LandingPage() {
             })
           }
         </div> */}
-        <div className="home-sec-4-wheel-row container mt-5">
+        {/* <div className="home-sec-4-wheel-row container mt-5">
           <div className="home-sec-4-wheel-container">
             <img src={wheelImg} style={{ transform: `rotate(${imageRotation}deg)` }} alt="" />
           </div>
-        </div>
+        </div> */}
+
 
       </section>
+      <section>
+
+
+        <div className="circleCarousel">
+          <div className="circle" style={{ '--items': 21, '--rotation': `${(step * rotationIndex) * -1}deg` }}>
+            {[...Array(21)].map((_, index) => (
+                        <a key={index} href={linkUrls[index % linkUrls.length]} className="image-anchor" style={{'--index': index}}>
+          <div key={index} className="image" style={{'--index': index, 'backgroundImage': `url(${imageUrls[index % imageUrls.length]})`}}></div>
+              </a>
+        ))}
+        </div>
+    </div>
+      </section >
+
       <section className="home-sec-5">
         <div className="home-sec-5-container" >
           <h1 >Effortlessly</h1>
@@ -261,7 +288,7 @@ export default function LandingPage() {
        
       </section>
 
-        {/* <img src={landingFooter} alt=""  /> */}
+  {/* <img src={landingFooter} alt=""  /> */ }
       <section className='home-sec-7'>
         <div className='lp-footer-logo-div'>
         <img  className='lp-footer-logo'  src="https://res.cloudinary.com/djweedhpy/image/upload/v1710753625/Landing%20page/desktop/peteye_smtpuu.png" alt="" />
@@ -269,22 +296,22 @@ export default function LandingPage() {
 
         <div className='footer-sm-main-div'>
             
-          <div onClick={()=> window.location.href = 'https://www.w3schools.com/css/css_padding.asp'} className='sm-sub-small-div' >
+          <div onClick={()=> window.location.href = 'https://www.youtube.com/channel/UC4XYxZ8YILbvGPy4lUkHmqw'} className='sm-sub-small-div' >
           <img  data-aos="fade-up" className='social-img-sub' src={youtubeSm} alt="" />
           </div>
-          <div onClick={()=> window.location.href = 'https://imvenx.github.io/multiglancer/#/'} className='sm-sub-div'>
+          <div onClick={()=> window.location.href = 'https://www.instagram.com/peteyehub?igsh=eGVkdHByN3RwZXZi'} className='sm-sub-div'>
           <img  data-aos="fade-up" className='social-img-main' src={instaSm} alt="" />
           </div>
-          <div onClick={()=> window.location.href = 'https://github.com/'} className='sm-sub-div'>
+          <div onClick={()=> window.location.href = 'https://twitter.com/Peteyehub'} className='sm-sub-div'>
           <img  data-aos="fade-up" className='social-img-main' src={twitterSm} alt="" />
           </div>
-          <div onClick={()=> window.location.href = 'https://www.w3schools.com/css/css_padding.asp'} className='sm-sub-div'>
+          <div onClick={()=> window.location.href = 'https://www.facebook.com/PeteyeHub/'} className='sm-sub-div'>
           <img  data-aos="fade-up" className='social-img-main' src={facebookSm} alt="" />
           </div>
-          <div onClick={()=> window.location.href = 'https://imvenx.github.io/multiglancer/#/'} className='sm-sub-div'>
+          <div onClick={()=> window.location.href = 'https://www.linkedin.com/company/kr-pet-eye-llp/'} className='sm-sub-div'>
           <img  data-aos="fade-up" className='social-img-main' src={linkedinSm} alt="" />
           </div>
-          <div onClick={()=> window.location.href = 'https://github.com/'} className='sm-sub-small-div'>
+          <div onClick={()=> window.location.href = 'https://www.threads.net/@peteyehub'} className='sm-sub-small-div'>
           <img  data-aos="fade-up" className='social-img-sub' src={mail} alt="" />
           </div>
        </div>
@@ -297,20 +324,10 @@ export default function LandingPage() {
       </section>
       <VideoModal videoSrc={videoToPlay} setVideoSrc={setVideoToPlay}></VideoModal>
 
-      <section>
+      
 
 
-       <div className="circleCarousel">
-      <div className="circle" style={{'--items': 21, '--rotation': `${(step * rotationIndex) * -1}deg`}}>
-      {[...Array(21)].map((_, index) => (
-          <div key={index} className="image" style={{'--index': index, 'backgroundImage': `url(${imageUrls[index % imageUrls.length]})`}}></div>
-        ))}
-      </div>
-    </div>
-      </section>
-
-
-    </div>
+    </div >
   )
 
 }
