@@ -22,7 +22,7 @@ const Section1 = () => {
   useEffect(() => {
       const scrollToRef = () => {
           const element = document.getElementById(location.hash.split("#")?.[1]);
-          console.log(element)
+          // console.log(element)
           if (element) {
               element.scrollIntoView({ behavior: 'smooth' });
           }

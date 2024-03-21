@@ -89,10 +89,8 @@ body {
   .paragraph {
     width: 625px;
     font-size: 1rem;
-    .peteyeimg {
-  }
     width: 100%;
-    max-width: 17.49319rem;
+    /* max-width: 17.49319rem; */
     height: auto;
     flex-shrink: 0;
     display: block;
