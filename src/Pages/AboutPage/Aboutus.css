@@ -893,6 +893,13 @@ body {
   margin-top: 5px;
 }
 }
+@media screen and (min-width: 1150px) {
+  .about.img1 {
+    width: 60px;
+    margin-top: 10px;
+  }
+
+}
 
 @media screen and (min-width: 1360px) {
   .about.img1 {

@@ -19,15 +19,28 @@ export default function GuideCard({ index = 0,  selectedItem = -1, guide = {}, s
     }
     return (
         <div className='gs-contain'>
-            <div>
+        
                 
-                <div className="gs-container-sec-1-item" onClick={() => setSelectedItem(index)}>
+                <div style={{ height:'60vh' }} className="gs-container-sec-1-item" onClick={() => setSelectedItem(index)}>
                     {/* <b>0{index + 1}</b> */}
+                    <div style={{ display:'flex', flexDirection:'column', width:'600px' }}>
+
                     {
                         selectedItem != index &&
                         <img src={guide.image} alt="" />
                     }
-                    <div className="gs-container-sec-1-item-content" >
+                    <span>
+                                    <RiTimerFill className="rIcon" />
+                                </span>
+                                <span>{articleArr?.[selectedItem]?.duration} Read</span>
+                                <span>
+                                    <RiCalendar2Fill className='rIcon' />
+                                </span>
+                                <span>{articleArr?.[selectedItem]?.date}</span>
+                                <p>{guide.title}</p>
+
+                    </div>
+                    {/* <div className="gs-container-sec-1-item-content" >
                     <div className="box-footer">
                             <div>
                                 <span>
@@ -60,10 +73,10 @@ export default function GuideCard({ index = 0,  selectedItem = -1, guide = {}, s
                                 //     <button  className='primary-btn p-2' onClick={() => setArticleToView(guide)}>Read More</button>
                                 // </>
                         }
-                    </div>
+                    </div> */}
                 </div>
                 <div className={`gs-container-sec-1-item-divider ${selectedItem == index ? "active" : ""}`} />
-            </div>
+          
             
         </div>
     )
