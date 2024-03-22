@@ -117,7 +117,7 @@ export default function LandingPage() {
       <section className="home-main-sec home-sec">
         <div className="home-head-tag" data-aos="fade-up">
           <div className="home-head">
-            <img src={petEyeImg} alt="" data-aos="fade-up" className='peteye-img' data-aos-delay="200" />
+            <img src={petEyeImg}  alt=""   className='peteye-img' data-aos-delay="200" />
           </div>
           <span>Nurturing Bonds Ensuring Safety</span>
           <button className='primary-btn'>Explore</button>

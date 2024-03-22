@@ -1078,9 +1078,43 @@ s
     }
 }
 
-@media(max-width:650px) {
+@media(max-width:576px) {
+    .home-head-tag {
+        gap: 20px;
+        padding-top: 80px;
+    }
     .home-main-sec {
-        padding-top: 180px;
+        padding-top: 130px;
+        text-align: center;
+
+    }
+    .sec-header{
+        display: flex;
+        justify-content: center;
+    }
+    .home-sec-2 .sec-containers .sec-container-2-img img {
+        object-fit: fill;
+        width: 265px;
+        border-radius: 11px;
+    }
+    .home-sec-2 .sec-containers .sec-container-1-img img {
+        object-fit: fill;
+        width: 265px;
+        border-radius: 11px;
+    }
+    .home-sec-6 {
+        padding: 60px 0px;
+        padding-left: 10px;
+        
+    }
+    
+    .home-sec-2 {
+        gap: 10px;
+        padding: 30px;
+        display: flex;
+        padding-top: 15px !important;
+        justify-content: center;
+        text-align: center;
     }
     .home-sec-7{
         margin-top: -40px;
@@ -1209,9 +1243,9 @@ s
         height: 250px;
     }
 
-    .home-main-sec {
+    /* .home-main-sec {
         padding-top: 150px;
-    }
+    } */
 }
 
 
@@ -1442,7 +1476,7 @@ s
         height: 360px;
     }
 }
-
+/* 
 @media(max-width:992px){
     .home-sec {
         padding-top: 301px;
@@ -1450,14 +1484,26 @@ s
     .peteye-img{
         width: 40% !important;
     }
-}
+} */
 
 
 
-@media screen and (min-width: 1078px) {
+@media screen and (min-width: 1360px) {
+    .peteye-img{
+        width: 40% !important;
+        position: sticky;
+        top: 5%;
+        z-index: 100;
+    }
     .home-sec-2 .sec-containers {
         display: flex;
         gap: 100px;
+    }
+    .social-img-main{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        cursor: pointer;
     }
     .home-main-img-row {
         margin-top: -60px;
@@ -1465,12 +1511,12 @@ s
     .lp-para {
         text-align: center;
         line-height: 2px;
-        margin-top: 57px;
+        margin-top: -25px;
     }
     .lp-footer-logo {
-        width: 45%;
+        width: 30%;
         align-items: center;
-        height: 20vh;
+        height: 14vh;
         margin-bottom: 20px;
         margin-top: 25px;
     }
@@ -1480,6 +1526,8 @@ s
         height: 300px;
         margin-bottom: 80px;
         display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .home-sec-5-container {
         flex-direction: column;
@@ -1498,8 +1546,87 @@ s
         gap: 10px;
     }
     }
+    
+@media screen and (min-width: 1500px) {
+    .home-sec-2 .sec-containers {
+        display: flex;
+        gap: 100px;
+    }
+    .home-main-img-row {
+        margin-top: 20px;
+    }
+    .lp-para {
+        text-align: center;
+        line-height: 2px;
+        margin-top: 25px;
+    }
+    .lp-footer-logo {
+        width: 45%;
+        align-items: center;
+        height: 20vh;
+        margin-bottom: 0px;
+        margin-top: -15px;
+    }
 
-
-
-
-
+    .lp-footer-logo-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-top: -20px;
+        
+        
+    }
+    .sec-6-img-container {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-sm-main-div {
+        margin-top: -15px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 80px;
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .home-sec-5-container {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: -100px;
+        border-radius: 1000px;
+        text-align: center;
+    }
+    .home-sec-2 .sec-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sm-sub-small-div{
+        width: 15%;
+        height: 300px;
+    }
+    .sm-sub-div{
+        width: 25%;
+        height: 300px;
+    }
+    
+    .social-img-main{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+    .social-img-sub{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+    }
+    
+    

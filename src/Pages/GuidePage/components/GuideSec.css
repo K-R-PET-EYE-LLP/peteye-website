@@ -9,6 +9,7 @@
 .gs-contain{
     display: flex;
     flex-wrap: wrap;
+    width: 49%;
 }
 
 .gs-container-sec-1-item {
@@ -19,7 +20,10 @@
 
 
 
-.gs-container-sec-1,
+.gs-container-sec-1{
+    display: flex;
+    flex-wrap: wrap;
+}
 .gs-container-sec-2 {
     flex: 50%;
     padding: 15px;
@@ -79,10 +83,10 @@
 }
 
 .gs-container-sec-1 {
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
-    /* max-height: 50vh; */
+    max-height: 60vh;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -151,8 +155,8 @@
 }
 
 .gs-container-sec-1-item img {
-    width: 523px;
-    height: 291px;
+    width: 600px;
+    height: 391px;
     min-height: 150px;
     min-width: 150px;
 }
