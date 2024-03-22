@@ -38,7 +38,6 @@ export default function GuideSec({ selectedItem, setSelectedItem, setArticleToVi
                                 <span>{articleArr?.[selectedItem]?.date}</span>
                             </div>
                         </div>
-                        {/* <span>Featured</span> */}
                         <h6>{articleArr[selectedItem]?.title}</h6>
                         <p>{articleArr[selectedItem]?.summary?.[0]}</p>
                         
@@ -49,8 +48,7 @@ export default function GuideSec({ selectedItem, setSelectedItem, setArticleToVi
                 {
                     (articleArr ?? []).map((item, index) => {
                         return <>
-                            {/* <GuideCard guide={item} setArticleToView={setArticleToView} index={index} selectedItem={selectedItem} setSelectedItem={setSelectedItem} /> */}
-                            <GuideCard guide={item} index={index} />
+                            <GuideCard guide={item} index={index} setArticleToView={setArticleToView} />
 
                         </>
                     })

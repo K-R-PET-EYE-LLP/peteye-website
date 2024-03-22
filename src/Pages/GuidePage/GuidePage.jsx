@@ -9,7 +9,6 @@ import {
 } from 'mdb-react-ui-kit';
 import './GuidePage.css'
 import Header from '../../Components/Header/Header';
-// import './GuideSec.css'
 import GuideSec from './components/GuideSec';
 import Footer from '../../Components/Footer/Footer'
 import ArticleView from './components/ArticleView';
@@ -44,7 +43,7 @@ export default function GuidePage() {
     return (
         <div className='guide'>
             <Header></Header>
-            <MDBContainer className='mb-5'>
+            {/* <MDBContainer className='mb-5'> */}
                 <div className="guide-header">
                     <span>Our Blog</span>
                     <h2>Stories and Guided Articles</h2>
@@ -58,18 +57,18 @@ export default function GuidePage() {
                             </MDBTabsLink>
                         </MDBTabsItem>
                         <MDBTabsItem className='guide-tab-item'>
-                            <MDBTabsLink onClick={() => handleJustifyClick('tips_and_tricks')} active={justifyActive === 'tips_and_tricks'}>
-                                Tips & Tricks
-                            </MDBTabsLink>
-                        </MDBTabsItem>
-                        <MDBTabsItem className='guide-tab-item'>
                             <MDBTabsLink onClick={() => handleJustifyClick('pet_care')} active={justifyActive === 'pet_care'}>
                                 Pet Care
                             </MDBTabsLink>
                         </MDBTabsItem>
                         <MDBTabsItem className='guide-tab-item'>
-                            <MDBTabsLink onClick={() => handleJustifyClick('health_and_nutritions')} active={justifyActive === 'health_and_nutritions'}>
-                                Health & Nutritions
+                            <MDBTabsLink onClick={() => handleJustifyClick('training_and_behaviour')} active={justifyActive === 'training_and_behaviour'}>
+                            Training & Behaviour
+                            </MDBTabsLink>
+                        </MDBTabsItem>
+                        <MDBTabsItem className='guide-tab-item'>
+                            <MDBTabsLink onClick={() => handleJustifyClick('health_and_wellness')} active={justifyActive === 'health_and_wellness'}>
+                                Health & Wellness
                             </MDBTabsLink>
                         </MDBTabsItem>
                     </MDBTabs>
@@ -85,33 +84,33 @@ export default function GuidePage() {
                                     <GuideSec category="all" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
                             }
                         </MDBTabsPane>
-                        <MDBTabsPane open={justifyActive === 'tips_and_tricks'}>
-                            {
-                                articleToView !== null ?
-                                    <ArticleView articleToView={articleToView} setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></ArticleView>
-                                    :
-                                    <GuideSec  category="tips_and_tricks" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
-                            }
-                        </MDBTabsPane>
                         <MDBTabsPane open={justifyActive === 'pet_care'}>
                             {
                                 articleToView !== null ?
                                     <ArticleView articleToView={articleToView} setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></ArticleView>
                                     :
-                                    <GuideSec category="pet_care" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
+                                    <GuideSec  category="pet_care" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
                             }
                         </MDBTabsPane>
-                        <MDBTabsPane open={justifyActive === 'health_and_nutritions'}>
+                        <MDBTabsPane open={justifyActive === 'training_and_behaviour'}>
                             {
                                 articleToView !== null ?
                                     <ArticleView articleToView={articleToView} setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></ArticleView>
                                     :
-                                    <GuideSec category="health_and_nutritions" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
+                                    <GuideSec category="training_and_behaviour" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
+                            }
+                        </MDBTabsPane>
+                        <MDBTabsPane open={justifyActive === 'health_and_wellness'}>
+                            {
+                                articleToView !== null ?
+                                    <ArticleView articleToView={articleToView} setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></ArticleView>
+                                    :
+                                    <GuideSec category="health_and_wellness" setArticleToView={setArticleToView} selectedItem={selectedItem} setSelectedItem={setSelectedItem}></GuideSec>
                             }
                         </MDBTabsPane>
                     </MDBTabsContent>
                 </div>
-            </MDBContainer>
+            {/* </MDBContainer> */}
             <Footer></Footer>
         </div>
     );
