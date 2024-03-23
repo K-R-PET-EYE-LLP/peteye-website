@@ -1,3 +1,40 @@
+
+.search-result-main-div{
+    width: 610px;
+    /* height: auto; */
+    max-height: 40vh;
+    position: absolute;
+    top: 22%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; */
+    z-index: 99;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    /* filter: blur(2px);
+    -webkit-filter: blur(8px); */
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+.res-question-div{
+    width: 97%;
+    border-radius: 8px;
+    min-height: 30px;
+    background-color: var(--main-grey);
+    margin: 8px;
+    padding: 10px;
+   
+
+}
+
+
 .support-main-sec{
     padding-top: 100px;
     display: flex;
@@ -21,6 +58,7 @@
 .support-main-sec-search-box .search-box-container {
     width: 610px;
     max-width: 90%;
+    position: relative;
     height: 51px;
     display: flex;
     justify-content: space-between;

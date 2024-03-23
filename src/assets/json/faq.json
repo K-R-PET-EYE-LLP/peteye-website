@@ -1,0 +1,180 @@
+[
+    {
+      "Question": "What is peteye?",
+      "Answer": "Peteye is a pet tech startup that provides a mobile application for pet owners. Our app offers various services, including GPS tracking, NFC tag scanning, pet insurance, and also coordinates with Local body (GHMC) in issuing Pet Licenses to enhance the safety and well-being of pets.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "How does the GPS Tracking feature work?",
+      "Answer": "Our GPS tracking feature allows you to monitor the real-time location of your pet. By attaching a small GPS device to your pet's collar and syncing it with our app, you can easily track their movements and receive location updates directly on your smartphone.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Who is required to obtain a pet license?",
+      "Answer": "All the owners within the jurisdiction of the Local body who own Pet Dogs, including the stray dogs adopted, must have the Pet Dog License from the concerned Local body as per norms/Dog By Law rules framed in compliance with the directions of the Animal Welfare Board of India.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "How do I apply for a pet license through Peteye?",
+      "Answer": "To apply for a pet license through Peteye, log into the app and navigate to the 'Pet Dog License Application' section. Follow the instructions provided, fill in the required information about your pet and yourself as the owner, and submit the application. We will process your application in collaboration with the Local body.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "What documents are required for the pet license application?",
+      "Answer": "The specific documentation required for the pet license application can vary depending on the local body rules and procedures. Typically, you will need to provide proof of your personal details, address, Pet information along with Anti Rabies vaccination record, and a photo of the pet. In the case of an adopted stray dog, sterilization and Anti Rabies Vaccination are mandatory.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "How long does it take to process a pet license application?",
+      "Answer": "The processing time for a pet license application can vary depending on the local body's rules. Typically, it may take a few business days to review and approve your application. We strive to expedite the process and will notify you of the status of your application through the app.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "How often do I need to renew my pet license?",
+      "Answer": "Every year, you need to renew the Local body (GHMC) Pet License through the online method.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "What is required for the renewal of a pet license?",
+      "Answer": "You need to upload the Anti Rabies Vaccination record to the Local body (GHMC) through the online method every year for the renewal of the Pet Dog License.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "What are the consequences of not having a pet license?",
+      "Answer": "Failure to obtain the Pet Dog License from the Local body as per the norms/Dog By Law Rules may result in imposing fines, penalties, compounding fees, legal complications such as Prosecution of the pet owner as per the provisions of Local body Acts and directing the owner to appear before concerned court's magistrate for further legal action and also confiscation of unlicensed Pet Dog and shifting it to an Animal Shelter if required.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Can I transfer my pet license to a new owner if I rehome my pet?",
+      "Answer": "Yes. In case of rehoming the pet to a new owner, the changes have to be intimated to officials of the concerned local body, and as per their advised process, the rehoming of the pet to a new owner will be allowed.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "How can I update my pet's license information in the app?",
+      "Answer": "Yes. By using the Peteye app, the pet owner can update the pet's License information as per the updating options available in the app.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Is the Anti Rabies Vaccination of a pet mandatory for a pet License?",
+      "Answer": "Yes. Anti Rabies Vaccination of a pet and submission of the same to the Local body officials are mandatory for the sanction of Pet License.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Where can I have my pet vaccinated with Anti Rabies Vaccination?",
+      "Answer": "Anti Rabies vaccination is done to pet dogs at all the Govt Veterinary Hospitals, Pvt Veterinary clinics, and Peteye also provides Anti Rabies Vaccination at doorsteps on request and as per certain conditions.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "At what age should my pet be vaccinated with Anti Rabies Vaccine?",
+      "Answer": "At 6 months of age, the first dose of Anti Rabies Vaccine should be administered.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Is annual re-vaccination of pet dogs with Anti Rabies Vaccine mandatory?",
+      "Answer": "Yes. Annual Anti Rabies Vaccination of pet dogs is mandatory for the development of immunity against Rabies disease.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Is it necessary to deworm the pet a few days before ARV vaccination?",
+      "Answer": "Yes. Deworming the pet dogs once in three months is advisable. Deworming the pets a few days before vaccination makes the dog healthier and provides good immunity to the pet dog.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Is a No Objection Certificate (NOC) required from neighbors for the issue of pet license by the local body?",
+      "Answer": "NOC is not required for the sanction of pet License as per the latest rules.",
+      "Category": "Pet Licensing and Regulations",
+      "Tags": []
+    },
+    {
+      "Question": "Are the photos of pet dogs required?",
+      "Answer": "Anti Rabies vaccination is done  to pet dogs at all the Govt Veterinary Hospitals, Pvt Veterinary clinics and Peteye also provides Anti Rabies Vaccinstion at door steps on request and as per certain condtions."
+    },
+      {
+        "Question": "Any officer / staff from the Local body inspect my pet and my home after issue of pet license?",
+        "Answer": "Yes. Local body officials have authority to inspect the home and pet. Mostly in compliance to the complaints of the neighbours or any citizens, the officials inspect to observe the prevailing conditions and maintenance of the dog after issue Pet Dog License and action will be taken in case of non compliance of the set rules of Pet Dog License."
+      },
+      {
+        "Question": "As per Local body pet dog License guidelines, what are the obligations of Pet owner after sanction of pet license?",
+        "Answer": "The pet owner has to invariably provide timely food, water to their pet and must also take care of its health along with timely vaccinations, humane method of handling and proper sanitation without causing nuisance to the neighbours as per the norms of Local body."
+      },
+      {
+        "Question": "Can I have GHMC pet dog licenses for more than one dog?",
+        "Answer": "Yes. A citizen can have pet licenses for more than one pet, subject to fulfilling the set norms of Local body's pet Licensing policy rules."
+      },
+      {
+        "Question": "Do the GHMC issue physical Pet Dog Tokens after sanction of Pet License?",
+        "Answer": "No. As per recent rules, the GHMC issues a Pet Dog License in electronic format through online method. The sanctioned letter is supposed to be available with the owner in electronic format in their electronic gadgets or print of it (Hard copy) to show it to inspecting Local body officials etc if required."
+      },
+      {
+        "Question": "Can I display the GHMC Pet Dog License in the house or on the compound wall entrance Gate?",
+        "Answer": "Yes. The Pet Dog License is supposed to be with the owner in the home. Typically, if Pet owners display the Pet Dog License on the premises front Gate, it will create a sense safety to the visitors and neighbours as well."
+      },
+      {
+        "Question": "Against neighbours complaint do my pet license gets cancelled by officials of Local body?",
+        "Answer": "In case of complaint/s of the neighbours or colony citizens etc, the local body officials as a part of their job chart, will inspect the pet dog and its premises with or without prior intimation. Only in case of non compliance of norms of Pet Dog License rules of Local body by the pet dog owner, the said officials will initiate appropriate action initially with a show cause notice duly mentioning time limit to rectify the non complying aspects and in case of no improvement in the situation the action will be initiated against the pet owner through challans, compounding fee, prosecution and also confiscation of pet and shifting it to Animal shelter if required."
+      },
+      {
+        "Question": "Do the Local body officials issue the pet licenses to the adopted stray dogs which are sterilized, vaccinated with Anti Rabies Vaccine and fed by me?",
+        "Answer": "Yes. As per Local body Dog By Law Rules conditions, the pet licenses will be issued to the stray dogs which are sterilized, vaccinated and properly maintained by the adopters or Dog Lovers."
+      },
+      {
+        "Question": "How much I need to pay for Pet license?",
+        "Answer": "Pet Licenses are issued on free of cost basis."
+      },
+      {
+        "Question": "Is sterilization of my pet mandatory for Local body Pet License?",
+        "Answer": "No. The sterilization is not mandatory for issue of Local body pet license. However Local body advises the pet owners to get the pet sterilized to reduce its aggressiveness and to become friendly with family members and visitors. However in case of the issue Pet License to stray dog adopted by Dog Lovers the Sterilization is mandatory."
+      },
+      {
+        "Question": "Do the Local body issues Pet License to adopted stray dog? If so, what are requirements?",
+        "Answer": "Yes. The local body issues the pet licenses to those stray dogs, which are sterilized, Vaccinated with Anti Rabies Vaccine and well maintained by the Dog Lovers/Adopters as per the norms of Local body."
+      },
+      {
+        "Question": "What is the procedure for obtaining GHMC Pet Dog License through online method?",
+        "Answer": "The GHMC (Local body) has recently started the online Pet Dog License issue method. The Pet owner has to go the GHMC website // www.ghmc.org// and in Pet Dog License category the pet owner has to provide their personal, pet details along with uploading of Anti Rabies Vaccination certificate duly giving the undertaking for fulfilling the post license conditions."
+      },
+      {
+        "Question": "How PetEye helps the pet owners in obtaining GHMC License through online from their homes in a hassle-free manner?",
+        "Answer": "The Peteye as a social obligation, gathers the details of pet and its owner along with dog photo and Anti Rabies Vaccination record of pet from citizens who are interested in obtaining the GHMC (Local body) Pet Dog License and Based on this information Peteye staff helps/ guides the Pet Dog owners in the process of online application of pet dog licenses and also provides continuous assistance til the sanction of Pet Dog License by the GHMC (Local body) officials and also assisting the pet dog owner in downloading the sanctioned pet license at their home."
+      },
+      {
+        "Question": "Is the Pet License sanctioned in one Local body is valid in other Local bodies in case of shifting of pet?",
+        "Answer": "Yes. In case of shifting of pet to different local body It is the duty of the pet owner to intimate the concerned Local body officials by submitting the already sanctioned pet dog license and also by complying the additional rules if any of concerned local body."
+      },
+      {
+        "Question": "What are the consequences of not having a pet license?",
+        "Answer": "It is mandatory to have Pet Dog License from the Local body keeping in view of public health, hygiene and also as per Local body Dog By Law rules in compliance to directions and SOP norms of Animal Welfare Board of India. In the event of complaints from neighbours or citizens against the unlicensed pet dog's nuisance, or on routine method the GHMC officials (the competent authority) will inspect the premises. If the inspection authority confirms the non-compliance to set rules of Pet Dog License policy, will confiscate and shift the said unlicensed pet dog to the Animal Shelter of concerned local body after issuing notice/s as per the provisions of Local body Act and rules."
+      },
+      {
+        "Question": "Which Act and Rules are being followed by Local body in issuing the pet dog licenses?",
+        "Answer": "The Pet Dog License is issued as per the GHMC (Local body) Dog By Law Rules as per the directions and SOP norms of Animal Welfare Board of India."
+      },
+      {
+        "Question": "Who is the competent authority in the Local body to issue Pet Licenses?",
+        "Answer": "The Veterinary Officer/authorized staff of concerned Local body is competent authority to issue the pet dog license."
+      },
+      {
+        "Question": "Is certificate obtained from Kennel Club of India or local Kennel clubs is sufficient instead of Local body Pet License?",
+        "Answer": "No. Only the Pet Dog License issued by competent authority of concerned office of GHMC  (Local body) is valid  in its limit as per the Dog By Law rules ."
+      },{
+        "Question": "Do the officials of Animal Welfare Board of India recognises, the Local body pet License?",
+        "Answer":"Yes . The Local body Dog By Law Rules  are framed as per the Standard Operative Procedure (SOP ) norms of Animal Welfare Board of India .Therefore  the pet dog license  issued by local body is recognised by the Animal Welfare Board of India. "
+      }
+    
+  ]
