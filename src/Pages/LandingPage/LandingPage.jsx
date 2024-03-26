@@ -26,7 +26,7 @@ facebookSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landin
 linkedinSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
 mail='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
 
-const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4";
+const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1711457757/video26-03-2024_18_25_10_15_zkpqn9.mp4";
 
 export default function LandingPage() {
   const [videoToPlay, setVideoToPlay] = useState(null);
