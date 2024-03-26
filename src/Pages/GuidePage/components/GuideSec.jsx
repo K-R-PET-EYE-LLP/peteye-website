@@ -27,15 +27,15 @@ export default function GuideSec({ selectedItem, setSelectedItem, setArticleToVi
                         <div className="box-footer">
                             <div>
                                 <span>
-                                    <RiTimerFill className="rIcon" />
-                                </span>
-                                <span>{articleArr?.[selectedItem]?.duration} Read</span>
-                            </div>
-                            <div>
-                                <span>
                                     <RiCalendar2Fill className='rIcon' />
                                 </span>
                                 <span>{articleArr?.[selectedItem]?.date}</span>
+                            </div>
+                            <div>
+                                <span>
+                                    <RiTimerFill className="rIcon" />
+                                </span>
+                                <span>{articleArr?.[selectedItem]?.duration} Read</span>
                             </div>
                         </div>
                         <h6>{articleArr[selectedItem]?.title}</h6>

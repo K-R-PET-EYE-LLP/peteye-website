@@ -951,3 +951,10 @@ body {
   height: 12.13744rem;
 }
 }
+
+@media screen and (min-width: 1600px) {
+  .about.img1 {
+    width: 420px;
+    margin-top: 50px;
+}
+}

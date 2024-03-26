@@ -13,6 +13,7 @@ Image6="https://res.cloudinary.com/djweedhpy/image/upload/v1709701961/Desktop/64
 Image7="https://res.cloudinary.com/djweedhpy/image/upload/v1709701946/Desktop/koushik_2_prbzgd.png",
 Image8="https://res.cloudinary.com/djweedhpy/image/upload/v1709898196/Desktop/govardhansir.8e90a46f78ba4d7273e7_gcsnon.png",
 Image9="https://res.cloudinary.com/djweedhpy/image/upload/v1709701941/Desktop/image_16418_bmvyse.png",
+Image10='',
 Image11="https://res.cloudinary.com/djweedhpy/image/upload/v1709898117/Desktop/subahshini1_1.7b9aefc92e023cc03362_oldpjo.png",
 Image12="https://res.cloudinary.com/djweedhpy/image/upload/v1709701933/Desktop/Group_1171276841_crlxff.png",
 Image13="https://res.cloudinary.com/djweedhpy/image/upload/v1709701939/Desktop/image_16417_vpiboj.png",
@@ -116,10 +117,19 @@ const Section1 = () => {
             </Row>
 
             <Row className="row">
+         
               <Col xs={12} md={4} lg={4}>
                 <div className="text-center mimg">
                   <img src={Image9} alt="Your Image" className="centered-image9 img-fluid" />
                   <h1 className='text1 mtext'>Mohit Kuril</h1>
+                  <h3 className='text2 mtext'> Developer</h3>
+                </div>
+              </Col>
+
+              <Col xs={12} md={4} lg={4}>
+                <div className="text-center mimg">
+                  <img src={Image10} alt="Your Image" className="centered-image9 img-fluid" />
+                  <h1 className='text1 mtext'>Jithun Madhav</h1>
                   <h3 className='text2 mtext'> Developer</h3>
                 </div>
               </Col>

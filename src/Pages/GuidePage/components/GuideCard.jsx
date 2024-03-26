@@ -21,9 +21,9 @@ export default function GuideCard({ index = 0, selectedItem = -1, guide = {}, se
         <div className='gs-contain'>
         
                 
-                <div style={{ height:'60vh' }} className="gs-container-sec-1-item" onClick={() => setSelectedItem(index)}>
+                <div  className="gs-container-sec-1-item" onClick={() => setSelectedItem(index)}>
                     {/* <b>0{index + 1}</b> */}
-                    <div style={{ display:'flex', flexDirection:'column', width:'600px' }}>
+                    <div style={{ display:'flex', flexDirection:'column', width:'400px' }}>
 
                 {
                     selectedItem != index &&
@@ -44,9 +44,9 @@ export default function GuideCard({ index = 0, selectedItem = -1, guide = {}, se
                         <span>{guide.date}</span>
                     </div>
                 </div>
-                <p style={{color:'#000',fontWeight:'550'}}>{guide.title}</p>
+                <p  className='card-head'>{guide.title}</p>
 
-                <span style={{textAlign:'justify'}}>{guide?.description?.[0]}</span>
+                <span className='card-desc' >{guide?.description?.[0]}</span>
                 <div className={`gs-container-sec-1-item-divider ${selectedItem == index ? "active" : ""}`} />
 
             </div>
