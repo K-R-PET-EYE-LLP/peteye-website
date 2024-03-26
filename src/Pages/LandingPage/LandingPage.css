@@ -102,11 +102,13 @@
 .lp-para1{
     font-size: small;
     max-width: 100% !important;
+    text-align: center !important;
 }
 .lp-para2{
     font-weight: bold;
     font-size: 12px;
     max-width: 100% !important;
+    text-align: center !important;
 
 }
 
@@ -223,7 +225,7 @@
     font-size: 22.5px;
     color: #909090;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
 }
 
 .home-sec-2 .sec-header h3 {
@@ -257,7 +259,7 @@
 .home-sec-2 .sec-containers .sec-container-1-img {
     width: 300px;
     height: 250px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     overflow: hidden;
 }
 
@@ -998,7 +1000,7 @@ s
         overflow: hidden;
         display: flex;
         width: 100%;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .home-sec-2 .sec-containers .sec-container-1-img img {
@@ -1096,8 +1098,28 @@ s
     .home-sec-5 {
         margin-top: 0px;
     }
+    .home-sec-2 .sec-containers .sec-container-1-img {
+        width: 265px;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .home-sec-2 .sec-title, .home-sec-3 .sec-title, .home-sec-4 .sec-title {
+        font-size: 22.5px;
+        color: #909090;
+        font-weight: 400;
+        text-align: center;
+    }
+    .home-sec-2 .sec-container-desc {
+        font-weight: 370;
+        font-size: large;
+        text-align: justify;
+    }
     .home-sec-2 .sec-header h3 {
         max-width: 100%;
+        font-size: 22px;
         font-family: Prata !important;
     }
     .home-head-tag {
@@ -1198,6 +1220,7 @@ s
 }
 
 @media(max-width:400px) {
+    
     .home-sec-7{
         margin-top: -40px;
     }
@@ -1265,6 +1288,7 @@ s
     .home-main-img-row-item:nth-child(2) {
         height: 250px;
     }
+    
 
     /* .home-main-sec {
         padding-top: 150px;
@@ -1682,7 +1706,7 @@ s
         }
         .home-sec-2 {
             margin-top: 50px;
-            text-align: center;
+            /* text-align: center; */
         }
         .main.landing section p {
             font-size: 1rem;
@@ -1711,12 +1735,20 @@ s
           .home-sec-2 .sec-container-desc {
             font-weight: 370;
             font-size: large;
-            max-width: 90%;
+            max-width: 90% ;
         }
     }
     @media screen and (min-width: 992px) {
         .home-sec {
             padding-top: 200px;
+        }
+        .home-sec-2 .sec-containers .sec-container-2-img {
+            width: 255px;
+            height: 250px;
+        }
+        .home-sec-2 {
+            margin-top: 50px;
+            /* text-align: center; */
         }
         .home-main-sec {
             height: 95vh;
@@ -1758,6 +1790,18 @@ s
             display: flex;
             margin-bottom: 80px;
           }
+          .main.landing section p {
+            font-size: 1rem;
+            text-align: left;
+            max-width: 70%;
+            margin-left: 0px;
+        }
+        .home-sec-2 .sec-container-header h5 {
+            font-size: 25px;
+            font-family: Prata !important;
+            color: #000;
+            width: 71%;
+        }
     }
     @media screen and (min-width: 1360px) {
         .home-sec-7 {
@@ -1771,7 +1815,7 @@ s
             width: 100%;
             height: 200px;
             display: flex;
-            margin-bottom: 150px;
+            margin-bottom: 180px;
           }
           .home-sec-2 .sec-containers {
             display: flex;
@@ -1808,15 +1852,14 @@ s
         }
         .main.landing section p {
             font-size: 1rem;
-            text-align: center;
-            max-width: 100%;
+            text-align: left;
+            max-width: 80%;
             margin-left: 0px;
         }
         .home-sec-2 .sec-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            align-items: center;
         }
          
     }

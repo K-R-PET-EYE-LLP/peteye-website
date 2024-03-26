@@ -165,7 +165,7 @@ export default function LandingPage() {
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{marginTop:'-55px',alignItems:'center'}} data-aos="fade-up">
+          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
