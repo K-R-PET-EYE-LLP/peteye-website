@@ -11,10 +11,10 @@ Image4="https://res.cloudinary.com/djweedhpy/image/upload/v1709897700/Desktop/Gr
 Image5="https://res.cloudinary.com/djweedhpy/image/upload/v1709897912/Desktop/download_3_whmd9t.png",
 Image6="https://res.cloudinary.com/djweedhpy/image/upload/v1709701961/Desktop/6491c548-f58a-4c69-a8e9-07d83057fe82_1_gg9ms4.png",
 Image7="https://res.cloudinary.com/djweedhpy/image/upload/v1709701946/Desktop/koushik_2_prbzgd.png",
-Image8="https://res.cloudinary.com/djweedhpy/image/upload/v1709898196/Desktop/govardhansir.8e90a46f78ba4d7273e7_gcsnon.png",
+Image8="https://res.cloudinary.com/djweedhpy/image/upload/v1710921738/Desktop/Goveerdhan_sir_1_1_gbgzkb.png",
 Image9="https://res.cloudinary.com/djweedhpy/image/upload/v1709701941/Desktop/image_16418_bmvyse.png",
-Image10='',
-Image11="https://res.cloudinary.com/djweedhpy/image/upload/v1709898117/Desktop/subahshini1_1.7b9aefc92e023cc03362_oldpjo.png",
+Image10='https://res.cloudinary.com/djweedhpy/image/upload/v1710921617/Desktop/image_16424_j8uahj.png',
+Image11="https://res.cloudinary.com/djweedhpy/image/upload/v1710921212/Desktop/image_16421_cgxjcx.png",
 Image12="https://res.cloudinary.com/djweedhpy/image/upload/v1709701933/Desktop/Group_1171276841_crlxff.png",
 Image13="https://res.cloudinary.com/djweedhpy/image/upload/v1709701939/Desktop/image_16417_vpiboj.png",
 line="https://res.cloudinary.com/djweedhpy/image/upload/v1709898380/Desktop/download_4_sddcv4.png"
@@ -118,7 +118,7 @@ const Section1 = () => {
 
             <Row className="row">
          
-              <Col xs={12} md={4} lg={4}>
+              <Col xs={12} md={4} lg={3}>
                 <div className="text-center mimg">
                   <img src={Image9} alt="Your Image" className="centered-image9 img-fluid" />
                   <h1 className='text1 mtext'>Mohit Kuril</h1>
@@ -126,7 +126,7 @@ const Section1 = () => {
                 </div>
               </Col>
 
-              <Col xs={12} md={4} lg={4}>
+              <Col xs={12} md={4} lg={3}>
                 <div className="text-center mimg">
                   <img src={Image10} alt="Your Image" className="centered-image9 img-fluid" />
                   <h1 className='text1 mtext'>Jithun Madhav</h1>
@@ -134,7 +134,7 @@ const Section1 = () => {
                 </div>
               </Col>
 
-              <Col xs={12} md={4} lg={4}>
+              <Col xs={12} md={4} lg={3}>
                 <div className="text-center simg">
                   <img src={Image11} alt="Your Image" className="centered-image11 img-fluid" />
                   <h1 className='text1'>Subhashini Kannan</h1>

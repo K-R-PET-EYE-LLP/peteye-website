@@ -98,8 +98,12 @@ const Menu = () => {
 
         {/* Home Link with Submenu */}
         <div className="menuImageContainer"   >
+          <Link to="/" >
+            <div>
         <RiHome4Fill className="rIcon" onMouseEnter={toggleHomeDropdown} />
-          <Link to="/" >Home</Link>
+        <p>&nbsp;Home</p>
+          </div>
+          </Link>
 
           {/* Home Dropdown */}
           {homeDropdownOpen && (
@@ -135,8 +139,12 @@ const Menu = () => {
 
         {/* Other Links */}
         <div className="menuImageContainer" >
+          <Link to="/Service/">
+          <div>
         <RiHeart2Fill className='rIcon' onMouseEnter={toggleHeartDropdown} />
-          <Link to="/Service/">Services</Link>
+        <p>Services</p>
+          </div>
+            </Link>
 
           {/* Heart Dropdown */}
           {heartDropdownOpen && (
@@ -168,8 +176,12 @@ const Menu = () => {
           )}
         </div>
         <div className="menuImageContainer"  >
+          <Link to="/about/">
+          <div>
         <RiBuilding4Fill className="rIcon" onMouseEnter={toggleAboutDropdown} />
-          <Link to="/about/">About</Link>
+        <p>About</p>
+          </div>
+          </Link>
 
           {/* About Dropdown */}
           {aboutDropdownOpen && (
@@ -202,8 +214,12 @@ const Menu = () => {
           )}
         </div>
         <div className="menuImageContainer"  >
+          <Link to="/guide/">
+          <div>
         <RiBookOpenFill className="rIcon" onMouseEnter={toggleGuideDropdown} />
-          <Link to="/guide/">Guide</Link>
+            <p>Guide</p>
+          </div>
+          </Link>
 
 
           {/* Guide Dropdown */}
@@ -235,8 +251,12 @@ const Menu = () => {
           )}
         </div>
         <div className="menuImageContainer"  >
+          <Link to="/support/">
+          <div>
         <RiShakeHandsFill className='rIcon' onMouseEnter={toggleSupportDropdown} />
-          <Link to="/support/">Support</Link>
+            <p>Support</p>
+          </div>
+          </Link>
 
 
           {/* Support Dropdown */}

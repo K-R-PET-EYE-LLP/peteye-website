@@ -120,7 +120,7 @@ export default function LandingPage() {
             <img src={petEyeImg}  alt=""   className='peteye-img' data-aos-delay="200" />
           </div>
           <span>Nurturing Bonds Ensuring Safety</span>
-          <button className='primary-btn'>Explore</button>
+          {/* <button className='primary-btn'>Explore</button> */}
         </div>
         <div className="home-main-img-row container">
           <div className="home-main-img-row-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="750">
@@ -165,7 +165,7 @@ export default function LandingPage() {
               Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
             </div> */}
           </div>
-          <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
+          <div className="sec-container" style={{marginTop:'-55px',alignItems:'center'}} data-aos="fade-up">
             <div className="sec-container-2-img">
               <img data-aos="zoom-out-down" src={sec2Img1} alt="" />
             </div>
@@ -181,10 +181,34 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+
+
+
+      <section className="home-sec-5">
+        <div className="home-sec-5-container" >
+          <h1 >Welcome to new era & Discover ultimate pet care experience</h1>
+          <div className="sec-5-img-container"
+            onMouseOver={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {
+              isHovered ? <video autoPlay muted controls className='sec-5-video' >
+                <source src={defaultVid} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video> :
+                <img src={sec5Img} alt="" />
+
+            }
+          </div>
+        </div>
+      </section>
+
+
       <section className="home-sec-3 home-sec container" id='sec-3' >
         <div className="home-sec-3-row-1">
           <div className="home-sec-3-row-1-container" >
-            <h1 data-aos="fade-up">Welcome to new era & Discover ultimate pet care experience</h1>
+            <h1 data-aos="fade-up">Creating a safe space for your pet with PetEYE</h1>
             <p data-aos="fade-up">Explore features like reminders and health tracking to ensure your pet's well-being. Don't forget to warmly engage with the 'Add Your Pet' document section. Welcome to a new era of pet parenting!"</p>
           </div>
           <div className="home-sec-3-row-1-container">
@@ -212,62 +236,11 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className="home-sec-4 .home-sec container">
-        <div className="home-sec-4-row-1" data-aos="fade-up">
-          <h1>"PetEye Stories: Heartwarming Tales from Our Furry Friends!"</h1>
-        </div>
-        <div className="sec-title text-center mt-5">
-          <span data-aos="fade-up">Here We Go</span>
-        </div>
-        {/* <div className="home-sec-4-container mt-3">
-          {
-            [0, 0, 0, 0, 0, 0,0, 0,0 ].map((item, index) => {
-              return <StoryCard item={item} index={index} length={6} />
-            })
-          }
-        </div>
-         <div className="home-sec-4-wheel-row container mt-5">
-
-     <div className="home-sec-4-wheel-row container mt-5">
-
-          <div className="home-sec-4-wheel-container">
-            <img src={wheelImg} style={{ transform: `rotate(${imageRotation}deg)` }} alt="" />
-          </div>
-        </div> */}
-
-      </section>
-      <section>
 
 
-        <div className="circleCarousel">
-          <div className="circle" style={{ '--items': 21, '--rotation': `${(step * rotationIndex) * -1}deg` }}>
-            {[...Array(21)].map((_, index) => (
-                        <a key={index} href={linkUrls[index % linkUrls.length]} className="image-anchor" style={{'--index': index}}>
-          <div key={index} className="image" style={{'--index': index, 'backgroundImage': `url(${imageUrls[index % imageUrls.length]})`}}></div>
-              </a>
-        ))}
-        </div>
-    </div>
-      </section >
 
-      <section className="home-sec-5">
-        <div className="home-sec-5-container" >
-          <h1 >Effortlessly</h1>
-          <div className="sec-5-img-container"
-            onMouseOver={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            {
-              isHovered ? <video autoPlay muted controls className='sec-5-video' >
-                <source src={defaultVid} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video> :
-                <img src={sec5Img} alt="" />
 
-            }
-          </div>
-        </div>
-      </section>
+
       <section className="home-sec-6">
         <div className="home-sec-6-container container">
           <div className="sec-6-img-container">
@@ -287,6 +260,28 @@ export default function LandingPage() {
         </div>
        
       </section>
+
+      <section className="home-sec-4 .home-sec container">
+        <div className="home-sec-4-row-1" data-aos="fade-up">
+          <h1>"PetEye Reviews: Heartfelt Reviews from our furry “Friends & Family” </h1>
+        </div>
+        <div className="sec-title text-center mt-5">
+          <span data-aos="fade-up">Here We Go</span>
+        </div>
+      </section>
+      <section>
+
+
+        <div className="circleCarousel">
+          <div className="circle" style={{ '--items': 21, '--rotation': `${(step * rotationIndex) * -1}deg` }}>
+            {[...Array(21)].map((_, index) => (
+                        <a key={index} href={linkUrls[index % linkUrls.length]} className="image-anchor" style={{'--index': index}}>
+          <div key={index} className="image" style={{'--index': index, 'backgroundImage': `url(${imageUrls[index % imageUrls.length]})`}}></div>
+              </a>
+        ))}
+        </div>
+    </div>
+      </section >
 
   {/* <img src={landingFooter} alt=""  /> */ }
       <section className='home-sec-7'>

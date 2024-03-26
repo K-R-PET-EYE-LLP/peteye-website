@@ -16,11 +16,11 @@ export default function ArticleView({ selectedItem, setSelectedItem, setArticleT
         <div className="article-view">
             <div className="av-container-sec-1">
                 <b>{articleToView.title}</b>
-                {
+                {/* {
                     (articleToView?.summary ?? []).map((item, index) => {
                         return <p key={index}>{item}</p>
                     })
-                }
+                } */}
                 <div style={{color:'#000'}}>
                     <span>
                         <RiCalendar2Fill className='rIcon' />
