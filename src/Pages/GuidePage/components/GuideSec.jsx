@@ -9,6 +9,7 @@ const images = {
     secDefImg: "https://res.cloudinary.com/djweedhpy/image/upload/v1709702661/Tab/Frame_1171277050_zo8m0q.png"
 }
 
+
 export default function GuideSec({ selectedItem, setSelectedItem, setArticleToView, category = "" }) {
     let articleArr = [];
     if (category === "all") {
@@ -16,6 +17,8 @@ export default function GuideSec({ selectedItem, setSelectedItem, setArticleToVi
     } else {
         articleArr = articleJson.filter(item => item.category === category)
     }
+    // const [selectedArticle,setselectedArticle ] = useState([])
+
     return (
         <div className="gs">
             

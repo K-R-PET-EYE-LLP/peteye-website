@@ -17,11 +17,17 @@ export default function GuideCard({ index = 0, selectedItem = -1, guide = {}, se
     } else {
         articleArr = articleJson.filter(item => item.category === category)
     }
+
+    const printcurrentItem=(item)=>{
+
+        console.log("/////",item);
+    }
+
     return (
         <div className='gs-contain'>
         
                 
-                <div  className="gs-container-sec-1-item" onClick={() => setSelectedItem(index)}>
+                <div  className="gs-container-sec-1-item" onClick={() => {setSelectedItem(index); printcurrentItem(guide) ; setArticleToView(guide)  } } >
                     {/* <b>0{index + 1}</b> */}
                     <div style={{ display:'flex', flexDirection:'column', width:'400px' }}>
 

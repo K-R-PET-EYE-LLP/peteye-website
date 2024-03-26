@@ -39,6 +39,7 @@ export default function GuidePage() {
     },[section])
 
     console.log(section, justifyActive)
+    console.log(articleToView,"VIEW");
 
     return (
         <div className='guide'>
