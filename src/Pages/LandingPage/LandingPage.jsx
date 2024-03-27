@@ -14,8 +14,8 @@ mainImg4="https://res.cloudinary.com/djweedhpy/image/upload/v1710406597/Mohit/Fr
 mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Frame_1171277164_spubgr.png",
 sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
 wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
-sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
-mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896905/Landing%20page/desktop/iphone-12-pro--silver.8e03b609b6a588e53d8c_qeifvh.png",
+sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1711530794/Landing%20page/desktop/image_16410_abyszo.png",
+mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
 playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
 appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
 landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png",
@@ -26,12 +26,13 @@ facebookSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landin
 linkedinSm='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/qdqedwiiyejkb5hanhmd.png',
 mail='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20page/desktop/iuboowl7inwzgpjtvwtz.png'
 
-const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1711457757/video26-03-2024_18_25_10_15_zkpqn9.mp4";
+const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1711530696/Landing%20page/desktop/Peteye_LP_Video_-_Made_with_Clipchamp_ajj4jo.mp4";
 
 export default function LandingPage() {
+  const sec_3_VideoDefault='https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4'
   const [videoToPlay, setVideoToPlay] = useState(null);
   const [isHovered, setHovered] = useState(false);
-  const [sec3Vid, setSec3Vid] = useState(defaultVid)
+  const [sec3Vid, setSec3Vid] = useState(sec_3_VideoDefault)
   const [imageRotation, setImageRotation] = useState(0)
   useEffect(() => {
     AOS.init({ duration: 500, delay: 50 });
@@ -148,7 +149,7 @@ export default function LandingPage() {
         </div>
         <div className="sec-header" data-aos="fade-up">
           <h3 data-aos="fade-up">
-            Effortlessly meet your pet's needs with<br /> our user-friendly app.
+            Effortlessly meet your pet's needs with our user-friendly app.
           </h3>
         </div>
         <div className="sec-containers">
@@ -176,7 +177,7 @@ export default function LandingPage() {
               Access reminders and updates via our complimentary data management services for seamless progress tracking.
             </div>
             <div className="sec-container-btn" data-aos="fade-up">
-              <button className='primary-btn'>Explore</button>
+              {/* <button className='primary-btn'>Explore</button> */}
             </div>
           </div>
         </div>
@@ -187,8 +188,8 @@ export default function LandingPage() {
 
       <section className="home-sec-5">
         <div className="home-sec-5-container" >
-          <h1 >Welcome to new era & Discover ultimate pet care experience</h1>
-          <div className="sec-5-img-container"
+          <h1 data-aos="fade-up" className='home-sec-4-head' >Welcome to new era & Discover ultimate pet care experience</h1>
+          <div data-aos="fade-up" className="sec-5-img-container"
             onMouseOver={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -247,7 +248,7 @@ export default function LandingPage() {
             <img src={mobileImg} alt="" data-aos="fade-up" />
           </div>
           <div className="home-sec-6-content">
-            <h1 data-aos="fade-up">Enhance Your Experience Download Our App from the App Store or Play Store </h1>
+            <h1 className="home-sec-6-head" data-aos="fade-up">Enhance Your Experience Download Our App from the App Store or Play Store </h1>
             <div className='sec-6-mobile-image'>
               <img src={mobileImg} alt="" data-aos="fade-up" />
             </div>

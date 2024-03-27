@@ -48,9 +48,11 @@ header {
   font-family: Poppins;
   font-size: 1.11094rem;
   font-style: normal;
+  cursor: pointer;
   font-weight: 400;
-  line-height: normal;
   text-decoration: none;
+  line-height: normal;
+  text-decoration: none !important;
 }
 
 .links .menuOptions {
@@ -171,7 +173,7 @@ header {
     background-color: #000;
     color: #fff !important;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
 
