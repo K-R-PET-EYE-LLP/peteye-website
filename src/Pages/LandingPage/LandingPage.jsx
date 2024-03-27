@@ -149,7 +149,7 @@ export default function LandingPage() {
         </div>
         <div className="sec-header" data-aos="fade-up">
           <h3 data-aos="fade-up">
-            Effortlessly meet your pet's needs with<br /> our user-friendly app.
+            Effortlessly meet your pet's needs with our user-friendly app.
           </h3>
         </div>
         <div className="sec-containers">
