@@ -190,8 +190,8 @@ const Menu = () => {
                 <div className="menu-drop-down-container">
                   <section>
                     <div className="menu-drop-down-sec-1">
-                      <Link to="/about/" className='submenu'><span>Home</span>  <RiArrowRightSLine className='riIcon' /></Link>
-                      <Link to="/about/" className='submenu'><span>Mission</span>  <RiArrowRightSLine className='riIcon' /></Link>
+                      <Link to="/about/#home" className='submenu'><span>Home</span>  <RiArrowRightSLine className='riIcon' /></Link>
+                      <Link to="/about/#home" className='submenu'><span>Mission</span>  <RiArrowRightSLine className='riIcon' /></Link>
                       <a href="/about/#vision" className='submenu'><span>Vision</span>  <RiArrowRightSLine className='riIcon' /></a>
                     </div>
                     <div className="menu-drop-down-sec-1">
