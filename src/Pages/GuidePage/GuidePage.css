@@ -50,17 +50,21 @@
 }
 .gs-container-sec-1 {
     display: flex;
-    /* flex-direction: column; */
     gap: 20px;
-    /* max-height: 53vh; */
-    /* overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; */
+   
 }
 
 @media(max-width:1024px){
     .guide-tab-item .nav-link{
        font-size: .55rem;
+       
     }
 }
 
+@media (max-width:450px) {
+    .guide-tabs{
+        padding: 1px 2px;
+        
+
+    }
+}

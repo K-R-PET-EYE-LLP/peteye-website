@@ -21,7 +21,7 @@ const Header = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="title">
-        {/* <h1>PetEYE</h1> */}
+        <h1>PetEYE</h1>
       </div>
 
       {/* Menu Links */}
