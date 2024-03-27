@@ -974,8 +974,8 @@ body {
 
 @media screen and (min-width: 1500px) {
   .about.img1 {
-    width: 450px;
-    margin-top: 10px;
+    width: 500px;
+    margin-top: 41px;
 }
 .paragraph {
   width: 80% !important;
@@ -1017,5 +1017,58 @@ body {
   margin-top: 7rem;
   text-align: center;
   margin-bottom: 80px;
+}
+}
+@media screen and (min-width: 1900px) {
+  .about.img1 {
+    width: 520px;
+    margin-top: 51px;
+}
+.paragraph {
+  width: 80% !important;
+  font-size: 1.5rem;
+  /* max-width: 17.49319rem; */
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.heading1 {
+  color: #000;
+  text-align: center;
+  font-family: Prata;
+  font-size: 3.38194rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 18px;
+  margin-top: 25px;
+}
+.momdogimg {
+  width: 60%;
+  margin-top: -5%;
+  margin-bottom: 250px;
+}
+.teambox {
+  padding: 50px;
+  margin-top: 10px !important;
+}
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 79px;
 }
 }

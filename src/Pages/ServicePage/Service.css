@@ -998,7 +998,21 @@ text-align: center;    }
     }
     .black-section {
         margin-top: -200px;
-        height: 900px !important;
+        height: 930px !important;
+    }
+    .catimg {
+        flex: 1 0;
+        align-self: stretch;
+        margin-top: 152px;
+        width: 100%;
+        height: 290px;
+        object-fit: contain;
+    }
+    .content-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25%;
     }
  }
  

@@ -29,9 +29,10 @@ mail='https://res.cloudinary.com/djweedhpy/image/upload/v1710845193/Landing%20pa
 const defaultVid = "https://res.cloudinary.com/djweedhpy/video/upload/v1711457757/video26-03-2024_18_25_10_15_zkpqn9.mp4";
 
 export default function LandingPage() {
+  const sec_3_VideoDefault='https://res.cloudinary.com/djweedhpy/video/upload/v1710404311/Mohit/Onboard_-_Made_with_Clipchamp_vcxyvp.mp4'
   const [videoToPlay, setVideoToPlay] = useState(null);
   const [isHovered, setHovered] = useState(false);
-  const [sec3Vid, setSec3Vid] = useState(defaultVid)
+  const [sec3Vid, setSec3Vid] = useState(sec_3_VideoDefault)
   const [imageRotation, setImageRotation] = useState(0)
   useEffect(() => {
     AOS.init({ duration: 500, delay: 50 });
