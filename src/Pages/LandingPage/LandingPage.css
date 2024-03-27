@@ -1157,11 +1157,11 @@ s
         font-size: 8px !important;
     }
     .home-main-img-row-item {
-        height: 200px;
+        height: 250px;
     }
 
     .home-main-img-row-item:nth-child(2) {
-        height: 250px;
+        height: 300px;
     }
     
 
@@ -1755,11 +1755,20 @@ s
     }
     .home-sec-2 .sec-containers .sec-container-1-img {
         width: 265px;
-        height: auto;
+        height: 40vh;
         overflow: hidden;
         display: flex;
         width: 100%;
-        justify-content: left;
+        justify-content: center;
+    }
+    .home-sec-3 {
+        padding: 20px;
+        margin-top: 27px;
+    }
+    .home-sec-2 .sec-container-header h5 {
+        font-size: 1.2rem;
+        font-family: Prata !important;
+        color: #000;
     }
     .home-sec-2 .sec-containers .sec-container-2-img {
         overflow: hidden;
@@ -1767,10 +1776,10 @@ s
         height: auto;
         display: flex;
         width: 100%;
-        justify-content: left;
+        justify-content: center;
     }
     .home-sec-2 .sec-title, .home-sec-3 .sec-title, .home-sec-4 .sec-title {
-        font-size: 2rem;
+        font-size: 1rem;
         color: #909090;
         font-weight: 400;
         text-align: left;
@@ -1782,7 +1791,7 @@ s
     }
     .home-sec-2 .sec-header h3 {
         max-width: 100%;
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-family: Prata !important;
     }
     .home-head-tag {
@@ -1796,17 +1805,22 @@ s
     }
     .sec-header{
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
     .home-sec-2 .sec-containers .sec-container-2-img img {
         object-fit: fill;
-        width: 265px;
-        border-radius: 11px;
+        width: 220px;
+        height: 35vh;
+        border-radius: 28px;
+        margin-bottom: 30px;
     }
     .home-sec-2 .sec-containers .sec-container-1-img img {
         object-fit: fill;
-        width: 265px;
-        border-radius: 11px;
+        width: 220px;
+        height: 35vh;
+        border-radius: 28px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
     .home-sec-6 {
         padding: 60px 0px;
@@ -1815,12 +1829,31 @@ s
     }
     
     .home-sec-2 {
-        gap: 10px;
+        gap: 5px;
         padding: 30px;
         display: flex;
         padding-top: 15px !important;
         justify-content: center;
         text-align: left;
+    }
+    .home-sec-2 .sec-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .main.landing section p {
+        font-size: 1rem;
+        text-align: justify;
+        max-width: 320px;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .home-sec-3-row-3-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
     }
     .home-sec-7{
         margin-top: 10px;
@@ -1880,8 +1913,15 @@ s
         font-size: 8px !important;
     }
     .main.landing section h1 {
-        font-size: 2rem;
-        text-align: left;
+        padding-right: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    .home-sec-6-container img {
+        height: 230px;
     }
     .home-sec-5-container {
         flex-direction: column;
@@ -1895,14 +1935,20 @@ s
     }
     .home-sec-4-head{
         text-align: center;
-        padding-left: 30px;
+        padding-left: 0px;
     }
     .home-sec-6-content .btns img {
         width: 93px;
         height: 40px;
     }
+    .home-sec-3-row-1-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 0px;
+    }
     .home-sec-6-head{
-        text-align: justify !important;
+        text-align: center !important;
     }
     .circle {
         --size: 410vw;
@@ -1925,10 +1971,27 @@ s
         margin-top: 0px;
     }
     .home-main-sec {
-        height: 97vh;
+        height: 93vh;
         justify-content: space-between;
-        padding-top: 200px;
+        padding-top: 140px;
         margin-top: 0px;
+    }
+     
+    .home-main-img-row {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: flex-end;
+        margin-top: -50px;
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+    .home-head img {
+        width: 230px;
+    }
+    .home-head-tag span {
+        font-size: 0.8rem;
     }
 }
 

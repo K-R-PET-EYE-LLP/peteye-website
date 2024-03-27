@@ -451,7 +451,7 @@ text-align: center;    }
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:420px) {
     .img1 {
         width: 3.87538rem;
         height: 3.87644rem;
@@ -466,6 +466,27 @@ text-align: center;    }
         fill: #D4E1EE;
         stroke-width: 0.462px;
         stroke: rgba(255, 255, 255, 0.16);
+    }
+    .lead2 {
+        color: #000;
+        text-align: center;
+        font-family: Prata;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+    .service .section1 .container {
+        height: 57vh;
+    }
+    .sv-sec-2-img-container img {
+        height: 350px;
+    }
+    .sv-sec-2-container-1>p {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        padding-top: 10px;
     }
 
 
@@ -770,9 +791,7 @@ text-align: center;    }
         width: 100%;
         
     }
-    .sv-sec-2-img-container img{
-       height: 416px;
-    }
+     
     .sv-sec-2-container-1 h1{
         font-size: 1.5rem;
         width: 100%;

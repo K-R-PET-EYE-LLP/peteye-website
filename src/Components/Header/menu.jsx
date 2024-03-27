@@ -191,7 +191,7 @@ const Menu = () => {
                   <section>
                     <div className="menu-drop-down-sec-1">
                       <Link to="/about/" className='submenu'><span>Home</span>  <RiArrowRightSLine className='riIcon' /></Link>
-                      <Link to="/about/" className='submenu'><span>Mission</span>  <RiArrowRightSLine className='riIcon' /></Link>
+                      <Link to="/about/#mission" className='submenu'><span>Mission</span>  <RiArrowRightSLine className='riIcon' /></Link>
                       <a href="/about/#vision" className='submenu'><span>Vision</span>  <RiArrowRightSLine className='riIcon' /></a>
                     </div>
                     <div className="menu-drop-down-sec-1">
@@ -299,8 +299,8 @@ const Menu = () => {
             <MDBAccordion flush className='mobile-menu-accordion'>
               <MDBAccordionItem collapseId={1} headerTitle='About US'>
                 <div className="accordion-items">
-                  <Link to="">Home</Link>
-                  <Link to="">Mission</Link>
+                  <Link to="/">Home</Link>
+                  <Link to="/about/#mission">Mission</Link>
                   <Link to="/about/#vision">Vision</Link>
                   <Link to="/about/#our-activity">Our Activity</Link>
                   <Link to="/about/#our-team">Our Team</Link>

@@ -473,7 +473,7 @@ body {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .text-container {
     text-align: center;
     transform: translate(0%, -130%);
@@ -489,7 +489,12 @@ body {
   .section-container {
     margin-top: 50%;
   }
-
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
   /* .teamcontainer {
     margin-top: -70%;
   } */

@@ -128,7 +128,7 @@ const Service = () => {
                             <h1 className='dms2'>Health  Management System</h1>
                         </div>
                         <div className='sv-sec-2-img-container'>
-                            <img src={hms} alt="" />col
+                            <img src={hms} alt="" />
                         </div>
                         <div>
                             <img src={hms1} alt='image1' className='img1' />
