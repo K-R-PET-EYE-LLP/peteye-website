@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Header.css";
 import Menu from "./menu"
+import { Link } from 'react-router-dom';
 
 
 const logo="https://res.cloudinary.com/djweedhpy/image/upload/v1709897397/Desktop/download_2_yawoh6.png"
@@ -25,7 +26,7 @@ const Header = () => {
 
       {/* Menu Links */}
       <div className="links">
-        <a to="/join-us" className='login'>Join Us</a>
+        <Link to="/" className='login'>Login</Link>
         <button className="menubtn" onClick={toggleMenu}>
           <span>&#9776;</span> Menu
         </button>

@@ -59,7 +59,7 @@ const Section1 = () => {
 
       <section className="mission container" id="vision">
         {
-          <div>
+          <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
             <img src={Image3} alt="img" className="peteyeimg img-fluid" />
             <p style={{marginTop:'-30px'}} className='para1'>With PetEYE</p>
             <p className='para2'>"We envision  a world where Every Pet is Safe and Loved"</p>

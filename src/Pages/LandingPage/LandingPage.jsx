@@ -15,7 +15,7 @@ mainImg5="https://res.cloudinary.com/djweedhpy/image/upload/v1710406603/Mohit/Fr
 sec2Img1="https://res.cloudinary.com/djweedhpy/image/upload/v1709701951/Desktop/205d2156-b217-4f1b-9640-1bc3a54dd2a1_1_gwgqmu.png",
 wheelImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710762733/Landing%20page/desktop/Group_1171277035_aceovc.png",
 sec5Img="https://res.cloudinary.com/djweedhpy/image/upload/v1709897283/Landing%20page/desktop/fa655bdfd352150fb9538a78491fc34c_bwetw7.png",
-mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1709896905/Landing%20page/desktop/iphone-12-pro--silver.8e03b609b6a588e53d8c_qeifvh.png",
+mobileImg="https://res.cloudinary.com/djweedhpy/image/upload/v1710829448/Recording2024-03-19114730-ezgif.com-speed_nzoxtt.gif",
 playStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896978/Landing%20page/desktop/download_ibjjrt.png",
 appStoreBadge="https://res.cloudinary.com/djweedhpy/image/upload/v1709896977/Landing%20page/desktop/download_1_zeayui.png",
 landingFooter="https://res.cloudinary.com/djweedhpy/image/upload/v1710760634/Landing%20page/desktop/fmbeibjsxehbabxc2bfm.png",
@@ -176,7 +176,7 @@ export default function LandingPage() {
               Access reminders and updates via our complimentary data management services for seamless progress tracking.
             </div>
             <div className="sec-container-btn" data-aos="fade-up">
-              <button className='primary-btn'>Explore</button>
+              {/* <button className='primary-btn'>Explore</button> */}
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function LandingPage() {
 
       <section className="home-sec-5">
         <div className="home-sec-5-container" >
-          <h1 >Welcome to new era & Discover ultimate pet care experience</h1>
+          <h1 className='home-sec-4-head' >Welcome to new era & Discover ultimate pet care experience</h1>
           <div className="sec-5-img-container"
             onMouseOver={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -247,7 +247,7 @@ export default function LandingPage() {
             <img src={mobileImg} alt="" data-aos="fade-up" />
           </div>
           <div className="home-sec-6-content">
-            <h1 data-aos="fade-up">Enhance Your Experience Download Our App from the App Store or Play Store </h1>
+            <h1 className="home-sec-6-head" data-aos="fade-up">Enhance Your Experience Download Our App from the App Store or Play Store </h1>
             <div className='sec-6-mobile-image'>
               <img src={mobileImg} alt="" data-aos="fade-up" />
             </div>

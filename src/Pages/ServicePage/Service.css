@@ -977,4 +977,28 @@ text-align: center;    }
         margin-bottom: 30px;
     }
  }
+ @media screen and (min-width: 1500px) {
+    .sv-sec-2 .sec2heading {
+        display: flex;
+        justify-content: normal;
+        flex-wrap: nowrap;
+        gap: 79px;
+    }
+    .section2 {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin-bottom: 120px;
+    }
+    .sv-sec-2-container-2 img {
+        height: 490px;
+        object-fit: contain;
+    }
+    .black-section {
+        margin-top: -200px;
+        height: 900px !important;
+    }
+ }
  
