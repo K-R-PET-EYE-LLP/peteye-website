@@ -4,7 +4,8 @@ import Menu from "./menu"
 import { Link } from 'react-router-dom';
 
 
-const logo="https://res.cloudinary.com/djweedhpy/image/upload/v1709897397/Desktop/download_2_yawoh6.png"
+const logo="https://res.cloudinary.com/djweedhpy/image/upload/v1709897397/Desktop/download_2_yawoh6.png",
+petEyeImg = "https://res.cloudinary.com/djweedhpy/image/upload/v1709897228/Landing%20page/desktop/PetEYE.4f02e2b0fe20852674c4_o3pmsp.png"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,6 +24,8 @@ const Header = () => {
       <div className="title">
         <h1>PetEYE</h1>
       </div>
+      {/* <img className='petEye' src={petEyeImg}  /> */}
+
 
       {/* Menu Links */}
       <div className="links">
@@ -31,7 +34,7 @@ const Header = () => {
           <span>&#9776;</span> Menu
         </button>
         <button className="menubtn2 d-md-none" onClick={toggleMenu}>
-          <span>&#9776;</span> 
+          <span style={{color:'black'}}>&#9776;</span> 
         </button>
         {/* Dropdown Menu */}
         {menuOpen && <Menu />}

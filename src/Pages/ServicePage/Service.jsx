@@ -196,7 +196,7 @@ const Service = () => {
             </section>
             {/* section1 */}
 
-            <section className="section1">
+            <section className="section1" id='service1'>
                 <Container>
                     <Row>
                         <Col>

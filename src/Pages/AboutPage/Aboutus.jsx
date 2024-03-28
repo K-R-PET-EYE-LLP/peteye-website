@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import "./Aboutus.css";
+import { Link } from 'react-router-dom';
+
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import { useLocation } from "react-router-dom";
@@ -75,10 +77,12 @@ const Section1 = () => {
           <p className='text12'>Fostering a world where every pet flourishes</p>
           <p className='text21'>we're dedicated to widespread responsible ownership, comprehensive health care advanced data insights, and creating a secure, compassionate community for all.</p>
           <nav className="navbar1">
+            <Link to="/service/#fetch-eco-system">
             <button className="fetchbtn">
               <img src={Image5} alt="Sketch Icon" width="24" height="24" />
               FETCH Ecosystem
             </button>
+            </Link>
           </nav>
         </div>
 

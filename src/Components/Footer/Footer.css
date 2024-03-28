@@ -88,10 +88,19 @@
     line-height: 1.875rem;
     opacity: 0.7984;
   }
+  .joinusbtn{
+    text-decoration: none;
+    color: black;
+  }
 
 }
 
 @media Screen and (max-width:767px) {
+  .joinusbtn{
+    text-decoration: none;
+    color: #FFF;
+  }
+
   .container11 {
     background-color: white;
   }

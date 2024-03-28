@@ -45,7 +45,7 @@ export default function GuidePage() {
         <div className='guide'>
             <Header></Header>
             {/* <MDBContainer className='mb-5'> */}
-                <div className="guide-header">
+                <div className="guide-header" id='guidepage'>
                     <span>Our Blog</span>
                     <h2>Stories and Guided Articles</h2>
                     <p>Join our family to learn about pet parenting, pet stories, and health guides</p>

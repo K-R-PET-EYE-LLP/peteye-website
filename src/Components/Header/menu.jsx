@@ -110,18 +110,6 @@ const Menu = () => {
             <div className="homeDropdown">
               <MDBContainer>
                 <div className="menu-drop-down-container">
-                  {/* <section>
-                    <div className="menu-drop-down-sec-1">
-                      <Link href="/" className='submenu'><span>Submenu 1</span>  <RiArrowRightSLine /></Link>
-                      <Link href="/" className='submenu'><span>Submenu 1</span>  <RiArrowRightSLine /></Link>
-                      <Link href="/" className='submenu'><span>Submenu 1</span>  <RiArrowRightSLine /></Link>
-                    </div>
-                    <div className="menu-drop-down-sec-1">
-                      <Link href="/" className='submenu'><span>Submenu 1</span>  <RiArrowRightSLine /></Link>
-                      <Link href="/" className='submenu'><span>Submenu 1</span>  <RiArrowRightSLine /></Link>
-                    </div>
-                  </section>
-                  <div className="menu-divider"></div> */}
                   <section>
                     <div className="menu-drop-down-sec-2">
                       <div className="menu-dropdown-img"></div>
@@ -139,7 +127,7 @@ const Menu = () => {
 
         {/* Other Links */}
         <div className="menuImageContainer" >
-          <Link to="/Service/">
+          <Link to="/Service/#service1">
           <div>
         <RiHeart2Fill className='rIcon' onMouseEnter={toggleHeartDropdown} />
         <p>Services</p>
@@ -176,7 +164,7 @@ const Menu = () => {
           )}
         </div>
         <div className="menuImageContainer"  >
-          <Link to="/about/">
+          <Link to="/about/#home">
           <div>
         <RiBuilding4Fill className="rIcon" onMouseEnter={toggleAboutDropdown} />
         <p>About</p>
@@ -214,7 +202,7 @@ const Menu = () => {
           )}
         </div>
         <div className="menuImageContainer"  >
-          <Link to="/guide/">
+          <Link to="/guide/#guidepage">
           <div>
         <RiBookOpenFill className="rIcon" onMouseEnter={toggleGuideDropdown} />
             <p>Guide</p>
@@ -230,11 +218,11 @@ const Menu = () => {
                   <section>
                     <div className="menu-drop-down-sec-1">
                       <Link to="/guide/all" className='submenu'><span>All</span>  <RiArrowRightSLine className='riIcon' /></Link>
-                      <Link to="/guide/tips_and_tricks" className='submenu'><span>Tips & Tricks</span>  <RiArrowRightSLine className='riIcon' /></Link>
                       <Link to="/guide/pet_care" className='submenu'><span>Pet Care</span>  <RiArrowRightSLine className='riIcon' /></Link>
+                      <Link to="/guide/training_and_behaviour" className='submenu'><span>Training & Behaviour</span>  <RiArrowRightSLine className='riIcon' /></Link>
                     </div>
                     <div className="menu-drop-down-sec-1">
-                      <Link to="/guide/health_and_nutritions" className='submenu'><span>Health Nutritions</span>  <RiArrowRightSLine className='riIcon' /></Link>
+                      <Link to="/guide/health_and_wellness" className='submenu'><span>Health & Wellness</span>  <RiArrowRightSLine className='riIcon' /></Link>
                     </div>
                   </section>
                   <div className="menu-divider"></div>
@@ -251,7 +239,7 @@ const Menu = () => {
           )}
         </div>
         <div className="menuImageContainer"  >
-          <Link to="/support/">
+          <Link to="/support/#supportsection">
           <div>
         <RiShakeHandsFill className='rIcon' onMouseEnter={toggleSupportDropdown} />
             <p>Support</p>
@@ -317,8 +305,8 @@ const Menu = () => {
                 </div>
                 </MDBAccordionItem>
             </MDBAccordion>
-            <Link to="/guide">Guide</Link>
-            <Link to="/support">Support</Link>
+            <Link to="/guide/">Guide</Link>
+            <Link to="/support/#supportsection">Support</Link>
             <div className='download-icons'>
               <a href='/'>
                 <img src={apple} alt='playstore' />

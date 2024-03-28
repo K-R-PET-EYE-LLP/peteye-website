@@ -1,4 +1,29 @@
-/* Default styles for the header */
+.mainHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* transition: top 0.3s; */
+}
+
+
+
+.title img {
+  /* transition: transform 0.3s, opacity 0.3s; */
+  transform:  translate(-50%, 0%) translate(0px, 48vh) scale(4)  ;  
+}
+
+.scroll .title img{
+  transform: translate(10%);
+}
+
+
+
+
+/* Add other styles as needed */
+
+
 
 
 header {
@@ -6,12 +31,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  /* z-index: 9999; */
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #fff;
+  background-color:#fff;
   color: #333;
   box-shadow: 0px 2.883px 7.929px 0px rgba(0, 0, 0, 0.15);
   height: 4rem;
@@ -28,6 +53,15 @@ header {
   text-align: center;
 }
 
+.title img{
+  width: 15%;
+  
+}
+
+.petEye{
+  width: 9%;
+}
+
 .title h1 {
   color: #000;
   text-align: center;
@@ -36,6 +70,7 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  
 }
 
 .links {
@@ -48,11 +83,9 @@ header {
   font-family: Poppins;
   font-size: 1.11094rem;
   font-style: normal;
-  cursor: pointer;
   font-weight: 400;
-  text-decoration: none;
   line-height: normal;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .links .menuOptions {
@@ -115,7 +148,7 @@ header {
 
 
 .menuImageContainer .options a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin: 0.2rem 0;
 }
@@ -173,7 +206,7 @@ header {
     background-color: #000;
     color: #fff !important;
     font-size: 15px;
-    text-decoration: none !important;
+    text-decoration: none;
   }
 
 
@@ -777,10 +810,11 @@ margin-right: 30px;
 }
 .menuImageContainer .rIcon{
   font-size: 2.5rem;
-  color: #B0B0B0;
+  color: white;
 }
 .menuImageContainer>a{
   font-size: .8rem !important;
+  text-align: center;
 }
 .mainHeader{
   display: flex;

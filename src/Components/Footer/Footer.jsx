@@ -42,7 +42,7 @@ const LinkSection = () => {
                 className='email-box'
               // className="form-control mb-2"
               />
-              <button style={{textDecoration:'none', color:'black'}}> Join Us</button>
+              <button className='joinusbtn' > Join Us</button>
             </div>
           </div>
           <div className="container d-flex justify-content-center">
@@ -57,40 +57,6 @@ const LinkSection = () => {
 
       <section className="bg-light text-dark py-5 d-none d-md-block navigationsec">
         <div className="container">
-          {/* <div className="row justify-content-between align-items-center mainsec">
-            <section className="col-md-3 px-4 py-3">
-              <div className="navigation-title font-weight-bold mb-3">Navigation</div>
-              <ul className="navigation-links list-unstyled">
-                <li><a href="#" className="text-dark">Home</a></li>
-                <li><a href="#" className="text-dark">About Us</a></li>
-                <li><a href="#" className="text-dark">What We Do</a></li>
-                <li><a href="#" className="text-dark">To the Power of 10</a></li>
-                <li><a href="#" className="text-dark">Donate</a></li>
-              </ul>
-            </section>
-            <section className="col-md-3 px-4 py-3 legalsec">
-              <div className="legal-title font-weight-bold mb-3">Legal</div>
-              <ul className="legal-links list-unstyled">
-                <li><a href="#" className="text-dark">Refund Policy</a></li>
-                <li><a href="#" className="text-dark">Privacy Policy</a></li>
-                <li><a href="#" className="text-dark">Terms & Conditions</a></li>
-
-              </ul>
-            </section>
-            <section className="col-md-4 px-4 py-3 catsec">
-              <div className="contact-title mb-3">
-                <img src={catimg} alt='img' className="img-fluid catimg" />
-                <div className="contactext text-center">
-                  <p className="font-weight-bold ctext">Our Dedicated Care Support - 24 Hours by 7 Days</p>
-                  <p className='ctext'>Monday-Saturday</p>
-                  <p className='ctext'>+91 00000-00000</p>
-                </div>
-              <div className="contact-buttons">
-                <button className="btn btn-dark btn-lg contact-button mb-2">Contact Us</button>
-              </div>
-              </div>
-            </section>
-          </div> */}
           <div className="">
 
             <div className="footer-content border-bottom mb-4">
@@ -145,13 +111,13 @@ const LinkSection = () => {
           <div className="col-md-4 d-flex justify-content-end">
             <div className="socialmedia d-flex justify-content-end">
               <span>
-                <RiFacebookFill />
+                <a href="https://www.facebook.com/PeteyeHub/" style={{textDecoration:'none', color:'black'}} > <RiFacebookFill /> </a>
               </span>
               <span>
-                <RiLinkedinFill />
+              <a href="https://www.linkedin.com/company/kr-pet-eye-llp/" style={{textDecoration:'none', color:'black'}}> <RiLinkedinFill /></a>
               </span>
               <span>
-                <RiTwitterXFill />
+              <a href="https://twitter.com/Peteyehub" style={{textDecoration:'none', color:'black'}}> <RiTwitterXFill /></a>
               </span>
             </div>
           </div>
@@ -204,13 +170,13 @@ const LinkSection = () => {
 
         <div className='mfsocial'>
             <span>
-              <RiFacebookFill />
+            <a href="https://www.facebook.com/PeteyeHub/" style={{textDecoration:'none', color:'black'}}> <RiFacebookFill /></a>
             </span>
             <span>
-              <RiLinkedinFill />
+            <a href="https://www.linkedin.com/company/kr-pet-eye-llp/" style={{textDecoration:'none', color:'black'}}>   <RiLinkedinFill /></a>
             </span>
             <span>
-              <RiTwitterXFill />
+            <a href="https://twitter.com/Peteyehub" style={{textDecoration:'none', color:'black'}}> <RiTwitterXFill /></a>
             </span>
         </div>
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../Components/Header/Header'
-import Lheader from '../../Components/LandingHeader/Lheader'
 import './LandingPage.css'
 import ImageCard from './components/ImageCard'
 import VideoModal from './components/VideoModal'
@@ -162,9 +161,7 @@ export default function LandingPage() {
                 and  track progress</h5>
               <p className='sec-container-desc'>Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.</p>
             </div>
-            {/* <div className="sec-container-desc" data-aos="fade-up">
-              Effortlessly monitor your progress with complimentary data management services, ensuring streamlined organization and optimization of your data.
-            </div> */}
+            
           </div>
           <div className="sec-container" style={{marginTop:'-55px'}} data-aos="fade-up">
             <div className="sec-container-2-img">
@@ -214,7 +211,7 @@ export default function LandingPage() {
           </div>
           <div className="home-sec-3-row-1-container">
             <div className='video'>
-              <video key={sec3Vid} data-aos="zoom-out-down" autoPlay muted controls width="100%" height="auto">
+              <video key={sec3Vid} data-aos="zoom-out-down" autoPlay loop muted controls width="100%" height="auto">
                 <source src={sec3Vid} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -254,8 +251,8 @@ export default function LandingPage() {
             </div>
             <p className='home-sec-6-para' data-aos="fade-up">"Discover a world of convenience and joy with our PetEye app! Seamlessly manage your pet's needs, connect with fellow pet lovers, and explore exclusive features tailored for you and your furry companion. Elevate your pet parenting journey – download now from the App Store or Play Store!"</p>
             <div className="btns">
-              <img data-aos="fade-up" src={playStoreBadge} alt="" />
-              <img data-aos="fade-up" src={appStoreBadge} alt="" />
+             <a href='https://play.google.com/store/apps/details?id=com.peteye.app&pli=1'> <img data-aos="fade-up" src={playStoreBadge} alt="" /></a>
+             <a href='https://apps.apple.com/in/app/peteye/id6450916668'> <img data-aos="fade-up" src={appStoreBadge} alt="" /></a>
             </div>
           </div>
         </div>
