@@ -20,6 +20,7 @@ export default function SupportPage() {
       }, [])
 
       const PetData=faqJson;
+      console.log(PetData);
       const [searchQuery, setSearchQuery] = useState('');
       const [searchResults, setSearchResults] = useState([]);
     
